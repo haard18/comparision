@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>قانون المعاملات المدنية الإماراتي - مقارنة 1985 و 2025</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --black: #0a0a0a;
+    --white: #f5f5f0;
+    --gray: #888;
+    --light-gray: #e0e0d8;
+    --border: 3px solid var(--black);
+    --border-thin: 1.5px solid var(--black);
+  }
+
+  body {
+    font-family: 'IBM Plex Sans Arabic', 'Noto Naskh Arabic', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.7;
+    direction: rtl;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-bottom: 6px solid var(--black);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .masthead-vol {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+  .masthead-date {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: left;
+  }
+
+  /* HERO */
+  .hero {
+    border-bottom: 6px solid var(--black);
+    padding: 60px 40px 50px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: clamp(32px, 5.5vw, 72px);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .hero .subtitle {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: clamp(12px, 1.5vw, 16px);
+    letter-spacing: 2px;
+    color: var(--gray);
+    margin-bottom: 30px;
+  }
+  .hero .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .hero .hero-meta span {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 12px;
+    padding: 6px 14px;
+    border: 2px solid var(--black);
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* SECTION DIVIDER */
+  .section-divider {
+    border-bottom: var(--border);
+    padding: 12px 40px;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  /* AT A GLANCE */
+  .at-a-glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border-bottom: var(--border);
+  }
+  .glance-card {
+    padding: 30px;
+    border-left: var(--border);
+    border-bottom: var(--border-thin);
+  }
+  .glance-card:last-child { border-left: none; }
+  .glance-label {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-bottom: 6px;
+  }
+  .glance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .glance-old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+  .glance-arrow {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .glance-new {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border-bottom: var(--border);
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 25px 15px;
+    border-left: var(--border-thin);
+  }
+  .stat-cell:last-child { border-left: none; }
+  .stat-number {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--gray);
+  }
+
+  /* KEY CHANGES GRID */
+  .changes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: var(--border);
+  }
+  @media (max-width: 700px) {
+    .changes-grid { grid-template-columns: 1fr; }
+  }
+  .change-item {
+    padding: 24px 30px;
+    border-left: var(--border-thin);
+    border-bottom: var(--border-thin);
+  }
+  .change-item:nth-child(2n) { border-left: none; }
+  .change-number {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+  .change-title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .change-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+  .change-old, .change-new {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .change-old {
+    color: var(--gray);
+  }
+  .change-sep {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .change-new { font-weight: 600; }
+
+  .tag-modified {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    border: 1.5px solid var(--black);
+    padding: 1px 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 6px;
+  }
+  .tag-new {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    background: var(--black);
+    color: var(--white);
+    padding: 2px 8px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 6px;
+  }
+  .tag-removed {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    border: 1.5px solid var(--black);
+    padding: 1px 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 6px;
+    text-decoration: line-through;
+  }
+
+  /* ARTICLE TABLE SECTIONS */
+  .article-section {
+    border-bottom: var(--border);
+  }
+  .article-section-header {
+    padding: 18px 30px;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .article-section-header .toggle {
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  .article-section-header.open .toggle {
+    transform: rotate(45deg);
+  }
+  .article-section-body {
+    display: none;
+  }
+  .article-section-body.open {
+    display: block;
+  }
+
+  .article-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .article-table thead th {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: right;
+    padding: 10px 14px;
+    border-bottom: 2px solid var(--black);
+    background: var(--light-gray);
+    position: sticky;
+    top: 0;
+  }
+  .article-table tbody tr {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .article-table tbody tr:hover {
+    background: rgba(0,0,0,0.03);
+  }
+  .article-table td {
+    padding: 8px 14px;
+    font-size: 13px;
+    vertical-align: top;
+  }
+  .article-table td:first-child,
+  .article-table td:nth-child(2) {
+    font-weight: 700;
+    white-space: nowrap;
+    width: 80px;
+    direction: ltr;
+    text-align: center;
+  }
+  .article-table td:nth-child(3) {
+    font-weight: 500;
+  }
+  .status-retained { color: var(--gray); }
+  .status-modified { font-weight: 600; }
+  .status-significant { font-weight: 700; }
+  .status-new {
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    padding: 1px 5px;
+    font-size: 11px;
+  }
+  .status-removed {
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+
+  /* REMOVED SECTION */
+  .removed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 0;
+    border-bottom: var(--border);
+  }
+  .removed-cell {
+    text-align: center;
+    padding: 16px 8px;
+    border-left: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+
+  /* STRUCTURE COMPARISON */
+  .structure-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: var(--border);
+  }
+  @media (max-width: 700px) {
+    .structure-compare { grid-template-columns: 1fr; }
+  }
+  .structure-col {
+    padding: 30px;
+    border-left: var(--border-thin);
+  }
+  .structure-col:last-child { border-left: none; }
+  .structure-col h3 {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--black);
+  }
+  .structure-col pre {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* SUMMARY BAR */
+  .summary-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    border-bottom: var(--border);
+  }
+  .summary-cell {
+    text-align: center;
+    padding: 20px 10px;
+    border-left: var(--border-thin);
+  }
+  .summary-cell:last-child { border-left: none; }
+  .summary-pct {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .summary-desc {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--gray);
+    margin-top: 4px;
+  }
+
+  /* PULL QUOTE */
+  .pull-quote {
+    padding: 40px;
+    border-bottom: var(--border);
+    text-align: center;
+  }
+  .pull-quote blockquote {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: clamp(18px, 2.5vw, 26px);
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto 12px;
+  }
+  .pull-quote cite {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    color: var(--gray);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* CALLOUT BOX */
+  .callout {
+    border: 3px solid var(--black);
+    margin: 0;
+    padding: 24px 30px;
+    border-bottom: var(--border);
+  }
+  .callout-label {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+  }
+  .callout p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* TOC */
+  .toc {
+    padding: 24px 30px;
+    border-bottom: var(--border);
+    columns: 2;
+    column-gap: 40px;
+  }
+  @media (max-width: 700px) {
+    .toc { columns: 1; }
+  }
+  .toc a {
+    display: block;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 12px;
+    color: var(--black);
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px dotted var(--light-gray);
+    break-inside: avoid;
+  }
+  .toc a:hover { background: var(--light-gray); }
+  .toc a span {
+    color: var(--gray);
+    float: left;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 40px;
+    border-top: 6px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-right {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 10px;
+    color: var(--gray);
+    max-width: 500px;
+    line-height: 2;
+  }
+  .footer-left {
+    text-align: left;
+  }
+  .footer-left a {
+    display: block;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 10px;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 4px;
+    border-bottom: 1px solid transparent;
+  }
+  .footer-left a:hover {
+    border-bottom: 1px solid var(--black);
+  }
+
+  .section-sub {
+    background: var(--light-gray);
+    font-weight: 700;
+    font-size: 12px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-vol">المجلد الأول &mdash; مقارنة قانونية</div>
+  <div class="masthead-date">أبريل ٢٠٢٦ &bull; أبوظبي</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="subtitle">قانون المعاملات المدنية لدولة الإمارات العربية المتحدة</div>
+  <h1>١٩٨٥ مقابل ٢٠٢٥<br>ما الذي تغيّر؟</h1>
+  <div class="subtitle" style="margin-bottom:20px;">القانون الاتحادي رقم (٥) لسنة ١٩٨٥ &larr; المرسوم بقانون اتحادي رقم (٢٥) لسنة ٢٠٢٥</div>
+  <div class="hero-meta">
+    <span>١٬٥٢٨ &larr; ١٬٤٢٢ مادة</span>
+    <span>يسري في ١ يونيو ٢٠٢٦</span>
+    <span>إعادة تقنين شاملة</span>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-cell">
+    <div class="stat-number">١٬٥٢٨</div>
+    <div class="stat-label">مواد القانون القديم</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">١٬٤٢٢</div>
+    <div class="stat-label">مواد القانون الجديد</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">١٠٦-</div>
+    <div class="stat-label">صافي التخفيض</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">~٧٨٪</div>
+    <div class="stat-label">أُبقيت كما هي</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">+١٥</div>
+    <div class="stat-label">تغييرات جوهرية</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">١٠</div>
+    <div class="stat-label">مواد حُذفت</div>
+  </div>
+</div>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <blockquote>&laquo;أهم إصلاح تشريعي في دولة الإمارات العربية المتحدة منذ تأسيس الاتحاد&raquo;</blockquote>
+  <cite>تحليلات قانونية متعددة، يناير ٢٠٢٦</cite>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="section-divider">محتويات هذا العدد</div>
+<div class="toc">
+  <a href="#key-changes">١٥ تغييراً رئيسياً <span>&darr;</span></a>
+  <a href="#at-a-glance">نظرة عامة مقارنة <span>&darr;</span></a>
+  <a href="#ch1-application">الفصل ١: تطبيق القانون <span>المواد ١&ndash;٢٨</span></a>
+  <a href="#ch2-maxims">الفصل ٢: القواعد الفقهية <span>المواد ٢٩&ndash;٧٠</span></a>
+  <a href="#ch3-persons">الفصل ٣: الأشخاص <span>المواد ٧١&ndash;٩٤</span></a>
+  <a href="#ch4-property">الفصل ٤: الأشياء والأموال <span>المواد ٩٥&ndash;١٠٣</span></a>
+  <a href="#ch5-rights">الفصل ٥: الحقوق <span>المواد ١٠٤&ndash;١١١</span></a>
+  <a href="#book1">الكتاب الأول: الالتزامات الشخصية <span>المواد ١١٢&ndash;٤٤٤</span></a>
+  <a href="#book2">الكتاب الثاني: العقود المسماة <span>المواد ٤٤٥&ndash;١٠٤٠</span></a>
+  <a href="#book3">الكتاب الثالث: الحقوق العينية <span>المواد ١٠٤١&ndash;١٣٤٠</span></a>
+  <a href="#book4">الكتاب الرابع: التأمينات العينية <span>المواد ١٣٤١&ndash;١٤٢٢</span></a>
+  <a href="#removed">المواد المحذوفة <span>١٠ مواد</span></a>
+  <a href="#new">المواد المضافة <span>+٩ أحكام</span></a>
+  <a href="#structure">مقارنة الهيكل <span>&darr;</span></a>
+  <a href="#classification">تصنيف التغييرات <span>&darr;</span></a>
+</div>
+
+<!-- AT A GLANCE -->
+<div class="section-divider" id="at-a-glance">نظرة عامة مقارنة</div>
+<div class="at-a-glance">
+  <div class="glance-card">
+    <div class="glance-label">المرجع القانوني</div>
+    <div class="glance-row">
+      <span class="glance-old">قانون اتحادي رقم ٥/١٩٨٥</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">مرسوم بقانون رقم ٢٥/٢٠٢٥</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">صدر عن</div>
+    <div class="glance-row">
+      <span class="glance-old">زايد بن سلطان آل نهيان</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">محمد بن زايد آل نهيان</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">تاريخ الإصدار</div>
+    <div class="glance-row">
+      <span class="glance-old">١٥ ديسمبر ١٩٨٥</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">١ أكتوبر ٢٠٢٥</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">إجمالي المواد</div>
+    <div class="glance-row">
+      <span class="glance-old">١٬٥٢٨</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">١٬٤٢٢</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">طبيعة التعديل</div>
+    <div class="glance-row">
+      <span class="glance-old">تعديلات تدريجية</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">إعادة تقنين شاملة</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">تاريخ النفاذ</div>
+    <div class="glance-row">
+      <span class="glance-old">مارس ١٩٨٦</span>
+      <span class="glance-arrow">&larr;</span>
+      <span class="glance-new">١ يونيو ٢٠٢٦</span>
+    </div>
+  </div>
+</div>
+
+<!-- 15 KEY CHANGES -->
+<div class="section-divider" id="key-changes">١٥ تغييراً رئيسياً</div>
+<div class="changes-grid">
+
+  <div class="change-item">
+    <span class="change-number">٠١</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">الفلسفة التشريعية</div>
+    <div class="change-comparison">
+      <div class="change-old">تسلسل هرمي ثابت يشير إلى مذاهب فقهية محددة (الإمام مالك، أحمد بن حنبل، الشافعي، أبو حنيفة)</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">سلطة تقديرية أوسع للقضاء؛ بدون التقيد بمذهب واحد؛ إضافة "مبادئ القانون الطبيعي والعدالة" كملاذ أخير</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٢</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">سن الرشد</div>
+    <div class="change-comparison">
+      <div class="change-old">٢١ سنة قمرية (هجرية)</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">١٨ سنة ميلادية</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٣</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">الإذن المالي للقاصر</div>
+    <div class="change-comparison">
+      <div class="change-old">١٨ سنة هجرية للإذن القضائي</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">١٥ سنة للإذن القضائي بإدارة الأموال</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٤</span><span class="tag-new">جديد</span>
+    <div class="change-title">حسن النية والالتزامات ما قبل التعاقد</div>
+    <div class="change-comparison">
+      <div class="change-old">لا يوجد إطار رسمي</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">تقنين واجب حسن النية في المفاوضات؛ إلزامية الإفصاح عن المعلومات الجوهرية؛ المسؤولية عن سوء النية (المواد ١٢١-١٢٢)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٥</span><span class="tag-new">جديد</span>
+    <div class="change-title">العقود الإطارية</div>
+    <div class="change-comparison">
+      <div class="change-old">غير معترف بها</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">تقنين رسمي؛ يجوز للأطراف تحديد الشروط الأساسية للعقود اللاحقة مسبقاً (المادة ١٣٨)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٦</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">حرية اختيار القانون الواجب التطبيق</div>
+    <div class="change-comparison">
+      <div class="change-old">أقل وضوحاً؛ اعتماد موقع إبرام العقد كضابط إسناد</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">أولوية صريحة لاختيار الأطراف للقانون الواجب التطبيق (المادة ١٩)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٧</span><span class="tag-removed">مُلغى</span>
+    <div class="change-title">القمار والرهان</div>
+    <div class="change-comparison">
+      <div class="change-old">المواد ١٠١٢-١٠٢١ تعالج نزاعات القمار والبطلان والاسترداد</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">حُذفت بالكامل؛ أُحيلت إلى الإطار التنظيمي المتخصص للهيئة العامة لتنظيم الألعاب التجارية</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٨</span><span class="tag-new">جديد</span>
+    <div class="change-title">شركة الشخص الواحد</div>
+    <div class="change-comparison">
+      <div class="change-old">غير مسموح بها صراحة للشركات المدنية</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">يُجيز صراحة تأسيس وتملك شركة مدنية من شخص واحد</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">٠٩</span><span class="tag-new">جديد</span>
+    <div class="change-title">الظروف الاستثنائية</div>
+    <div class="change-comparison">
+      <div class="change-old">سلطة تقديرية محدودة للقضاء في حالات القوة القاهرة</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">تمكين المحاكم صراحة من إعادة التوازن العقدي (تمديد التنفيذ، تعديل المقابل، أو الفسخ)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١٠</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">حماية الكفيل / الضامن</div>
+    <div class="change-comparison">
+      <div class="change-old">كان يجوز للدائن مطالبة الكفيل قبل المدين الأصلي</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">يجب مطالبة المدين الأصلي أولاً؛ لا يُنفذ على أموال الكفيل حتى استنفاد أموال المدين</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١١</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">مدة اكتشاف العيب الخفي</div>
+    <div class="change-comparison">
+      <div class="change-old">٦ أشهر من الاستلام</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">مُدّدت إلى سنة واحدة من الاستلام</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١٢</span><span class="tag-new">جديد</span>
+    <div class="change-title">تسجيل حق المساطحة / الانتفاع</div>
+    <div class="change-comparison">
+      <div class="change-old">غير منظم</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">التسجيل إلزامي؛ عدم التسجيل يترتب عليه البطلان</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١٣</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">الدية مع التعويض</div>
+    <div class="change-comparison">
+      <div class="change-old">الدية والتعويض الإضافي يُعاملان بشكل منفصل</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">يجوز الجمع بين الدية والتعويض الإضافي عندما يتجاوز الضرر مبلغ الدية</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١٤</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">تنازع القوانين &mdash; الزواج</div>
+    <div class="change-comparison">
+      <div class="change-old">يخضع لقانون جنسية كل من الزوجين (lex patriae)</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">يخضع لقانون مكان إبرام الزواج (lex loci celebrationis)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">١٥</span><span class="tag-modified">مُعدَّل</span>
+    <div class="change-title">استثناء النظام العام (المادة ٢٧)</div>
+    <div class="change-comparison">
+      <div class="change-old">تعديل ٢٠٢٠: نطاق مقيد يستبعد مسائل الأحوال الشخصية</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">أُعيد التطبيق الأوسع؛ حُذفت الإشارة الصريحة إلى الشريعة الإسلامية في ضابط النظام العام</div>
+    </div>
+  </div>
+
+  <div class="change-item" style="border-bottom:none;">
+    <span class="change-number">++</span><span class="tag-new">جديد</span>
+    <div class="change-title">التعسف في استعمال الحق (المادة ١٠٦)</div>
+    <div class="change-comparison">
+      <div class="change-old">مبدأ أساسي قائم</div>
+      <div class="change-sep">&larr;</div>
+      <div class="change-new">إطار موضوعي منظم لاختبار التناسب</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ARTICLE TABLES -->
+<div class="section-divider" id="general-provisions">مقارنة المواد مادةً بمادة</div>
+
+<!-- Ch1 -->
+<div class="article-section" id="ch1-application">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الفصل الأول: تطبيق القانون من حيث الزمان والمكان &mdash; المواد ١&ndash;٢٨</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>الأحكام التشريعية وتطبيقها</td><td class="status-significant">مُعدَّل جوهرياً &mdash; سلطة تقديرية أوسع للقاضي؛ حُذفت الإشارة إلى المذاهب الفقهية المحددة؛ تسلسل جديد: نص تشريعي &larr; شريعة إسلامية &larr; عرف &larr; قانون طبيعي وعدالة</td></tr>
+        <tr><td>2</td><td>2</td><td>الفقه الإسلامي في التفسير</td><td class="status-modified">مُعدَّل &mdash; أُوسّع؛ لم يعد مقيداً بمذاهب محددة</td></tr>
+        <tr><td>3</td><td>3</td><td>تعريف النظام العام</td><td class="status-modified">مُعدَّل &mdash; حُذف شرط عدم مخالفة "الأحكام القطعية والمبادئ الأساسية للشريعة الإسلامية"</td></tr>
+        <tr><td>4</td><td>4</td><td>إلغاء الأحكام التشريعية</td><td class="status-modified">مُعدَّل &mdash; أُضيف: النص الخاص يُقدّم على النص العام عند التعارض</td></tr>
+        <tr><td>5</td><td>5</td><td>الأهلية القانونية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>6</td><td>6</td><td>أحكام التقادم</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>7</td><td>7</td><td>تغيير مدد التقادم</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>8</td><td>8</td><td>الإثبات</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>9</td><td>9</td><td>حساب المواعيد</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>10</td><td>10</td><td>تنازع القوانين &mdash; تحديد العلاقات</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>11</td><td>11</td><td>الجنسية والأحوال المدنية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>12</td><td>12</td><td>شروط الزواج</td><td class="status-significant">مُعدَّل &mdash; من قانون الجنسية إلى قانون مكان الإبرام</td></tr>
+        <tr><td>13</td><td>13</td><td>آثار الزواج والطلاق</td><td class="status-significant">مُعدَّل &mdash; من قانون جنسية الزوج إلى قانون مكان الإبرام</td></tr>
+        <tr><td>14</td><td>14</td><td>زواج المواطن الإماراتي</td><td class="status-modified">مُعدَّل &mdash; وُسّع ليشمل من اكتسب الجنسية لاحقاً</td></tr>
+        <tr><td>15</td><td>15</td><td>التزامات النفقة على الأقارب</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>16</td><td>16</td><td>الولاية والوصاية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>17</td><td>17</td><td>الإرث والوصايا</td><td class="status-modified">مُعدَّل &mdash; يُجيز اختيار الموصي للقانون الواجب التطبيق</td></tr>
+        <tr><td>18</td><td>18</td><td>الحقوق العينية وقانون موقع المال</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>19</td><td>19</td><td>الالتزامات التعاقدية</td><td class="status-significant">مُعدَّل جوهرياً &mdash; أولوية صريحة لإرادة الأطراف في اختيار القانون</td></tr>
+        <tr><td>20</td><td>20</td><td>الالتزامات غير التعاقدية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>21</td><td>21</td><td>الاختصاص والإجراءات</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>22</td><td>22</td><td>الأحكام المخالفة في القوانين الخاصة</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>23</td><td>23</td><td>مبادئ القانون الدولي الخاص</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>24</td><td>24</td><td>مجهول أو مزدوج الجنسية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>25</td><td>25</td><td>تعدد الأنظمة القانونية</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>26</td><td>26</td><td>تطبيق القانون الأجنبي</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>27</td><td>27</td><td>ضابط النظام العام</td><td class="status-significant">مُعدَّل جوهرياً &mdash; أُعيد التطبيق الأوسع؛ حُذفت الإشارة الصريحة للشريعة</td></tr>
+        <tr><td>28</td><td>28</td><td>تعذر إثبات القانون الأجنبي</td><td class="status-retained">أُبقي كما هو</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch2 -->
+<div class="article-section" id="ch2-maxims">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الفصل الثاني: القواعد الفقهية وأصول التفسير &mdash; المواد ٢٩&ndash;٧٠</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>29</td><td>29</td><td>لا يُعذر أحد بجهل القانون</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>30</td><td>30</td><td>لا قياس على الاستثناءات</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>31</td><td>31</td><td>النص الآمر يقدّم على الشرط التعاقدي</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>32</td><td>32</td><td>ما لا يتم الواجب إلا به فهو واجب</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>33</td><td>33</td><td>الحكم يدور مع علته وجوداً وعدماً</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>34</td><td>34</td><td>المثليات لا تهلك</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>35</td><td>35</td><td>اليقين لا يزول بالشك</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>36</td><td>36</td><td>الأصل بقاء ما كان على ما كان</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>37</td><td>37</td><td>الأصل براءة الذمة</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>38</td><td>38</td><td>الأصل عدم العارض</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>39</td><td>39</td><td>ما ثبت بزمان يُحكم ببقائه</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>40</td><td>40</td><td>الحادث يُضاف إلى أقرب أوقاته</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>41</td><td>41</td><td>لا عبرة بما يخالف القياس</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>42</td><td>42</td><td>لا ضرر ولا ضرار</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>43</td><td>43</td><td>الضرورات تبيح المحظورات</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>44</td><td>44</td><td>الإقرار حجة؛ درء المفاسد أولى من جلب المصالح</td><td class="status-retained">أُبقي كما هو</td></tr>
+        <tr><td>45&ndash;70</td><td>45&ndash;70</td><td>باقي القواعد الفقهية (العرف، الاستصحاب، الأصل والتبع، إلخ)</td><td class="status-retained">أُبقيت جميعها كما هي</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch3 -->
+<div class="article-section" id="ch3-persons">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الفصل الثالث: الأشخاص &mdash; المواد ٧١&ndash;٩٤</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>71&ndash;80</td><td>71&ndash;80</td><td>الشخصية، الميلاد، الوفاة، اللقطاء، المفقودون، الجنسية، الأسرة، القرابة، الاسم</td><td class="status-retained">أُبقيت كما هي</td></tr>
+        <tr><td>81</td><td>81</td><td>الموطن</td><td class="status-modified">مُعدَّل &mdash; اعتراف صريح بتعدد المواطن؛ تمييز بين الموطن الشخصي والتجاري</td></tr>
+        <tr><td>82</td><td>82</td><td>موطن الأعمال</td><td class="status-modified">مُعدَّل &mdash; أحكام مُحسّنة</td></tr>
+        <tr><td>83&ndash;84</td><td>83&ndash;84</td><td>موطن ناقص الأهلية؛ الموطن المختار</td><td class="status-retained">أُبقيت كما هي</td></tr>
+        <tr><td>85</td><td>85</td><td>سن الرشد والأهلية</td><td class="status-significant">مُعدَّل جوهرياً &mdash; من ٢١ سنة قمرية إلى ١٨ سنة ميلادية</td></tr>
+        <tr><td>86</td><td>86</td><td>التمييز والحقوق المدنية</td><td class="status-modified">مُعدَّل &mdash; تحديث سن التمييز</td></tr>
+        <tr><td>87&ndash;91</td><td>87&ndash;91</td><td>نقص الأهلية، الولاية، الحرية الشخصية، الاعتداء، الاسم</td><td class="status-retained">أُبقيت (بلغة عصرية)</td></tr>
+        <tr><td>92</td><td>92</td><td>أنواع الأشخاص الاعتبارية</td><td class="status-modified">مُعدَّل &mdash; تحديث الفئات</td></tr>
+        <tr><td>93</td><td>93</td><td>حقوق الشخص الاعتباري</td><td class="status-modified">مُعدَّل &mdash; توضيح الذمة المالية المستقلة وأهلية التقاضي</td></tr>
+        <tr><td>94</td><td>94</td><td>الخضوع للقوانين الخاصة</td><td class="status-retained">أُبقي كما هو</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch4-5 + Book 1 -->
+<div class="article-section" id="book1">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الفصل ٤-٥ + الكتاب الأول: الالتزامات والحقوق الشخصية &mdash; المواد ٩٥&ndash;٤٤٤</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr class="section-sub"><td colspan="4">الأشياء والأموال (٩٥&ndash;١٠٣)</td></tr>
+        <tr><td>95&ndash;103</td><td>95&ndash;103</td><td>تعريف المال، المثليات، العقار والمنقول، الملك العام</td><td class="status-retained">أُبقيت (مع تحديث مادة ٩٦)</td></tr>
+        <tr class="section-sub"><td colspan="4">الحقوق (١٠٤&ndash;١١١)</td></tr>
+        <tr><td>104&ndash;105</td><td>104&ndash;105</td><td>استعمال الحق المشروع</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>106</td><td>106</td><td>التعسف في استعمال الحق</td><td class="status-significant">مُعدَّل جوهرياً &mdash; إطار منظم لاختبار التناسب الموضوعي</td></tr>
+        <tr><td>107&ndash;111</td><td>107&ndash;111</td><td>أنواع الحقوق (شخصية، عينية، معنوية)</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>112&ndash;123</td><td>&mdash;</td><td>أحكام الإثبات</td><td class="status-modified">أُعيد تنظيمها &mdash; نُقلت إلى قانون الإثبات (مرسوم بقانون ٣٥/٢٠٢٢)</td></tr>
+
+        <tr class="section-sub"><td colspan="4">العقود &mdash; أحكام عامة (١٢٤&ndash;١٢٨ &larr; ١١٢&ndash;١١٨)</td></tr>
+        <tr><td>124&ndash;127</td><td>112&ndash;115</td><td>مصادر الالتزام، تعريف العقد، المحل، عدم المشروعية</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>128</td><td>116&ndash;118</td><td>العقود المسماة وغير المسماة + التفسير + حسن النية</td><td class="status-modified">مُعدَّل &mdash; وُسّع ليشمل تقنين حسن النية</td></tr>
+
+        <tr class="section-sub"><td colspan="4">انعقاد العقد (١٢٩&ndash;١٤٨ &larr; ١١٩&ndash;١٣٨)</td></tr>
+        <tr><td>129&ndash;130</td><td>119&ndash;120</td><td>أركان العقد؛ الإيجاب والقبول</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>131</td><td>121</td><td>التعبير عن الإرادة</td><td class="status-significant">مُعدَّل جوهرياً &mdash; جديد: واجبات التفاوض بحسن نية؛ المسؤولية عن سوء النية</td></tr>
+        <tr><td>132</td><td>122</td><td>طرق التعبير</td><td class="status-significant">مُعدَّل جوهرياً &mdash; جديد: واجب الإفصاح الإلزامي؛ بطلان شروط تقييد الإفصاح</td></tr>
+        <tr><td>133&ndash;148</td><td>123&ndash;137</td><td>الوعد، عرض السلع، السكوت، خيار المجلس، المزاد، عقود الإذعان، العربون</td><td class="status-retained">أُبقيت أساساً</td></tr>
+        <tr><td>&mdash;</td><td>138</td><td>العقود الإطارية</td><td><span class="status-new">جديد</span> &mdash; تحديد الشروط الأساسية للعقود اللاحقة مسبقاً</td></tr>
+
+        <tr class="section-sub"><td colspan="4">النيابة في التعاقد (١٤٩&ndash;١٥٦ &larr; ١٣٩&ndash;١٤٦)</td></tr>
+        <tr><td>149&ndash;156</td><td>139&ndash;146</td><td>النيابة في التعاقد (٨ مواد)</td><td class="status-retained">أُبقيت</td></tr>
+
+        <tr class="section-sub"><td colspan="4">أهلية التعاقد (١٥٧&ndash;١٧٥ &larr; ١٤٧&ndash;١٦٠)</td></tr>
+        <tr><td>157&ndash;158</td><td>147&ndash;148</td><td>الأهلية العامة؛ الصغير غير المميز</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>159</td><td>149</td><td>تصرفات القاصر المالية</td><td class="status-modified">مُعدَّل &mdash; أصبحت قابلة للإبطال لمصلحة القاصر (كانت موقوفة)</td></tr>
+        <tr><td>160</td><td>150</td><td>إذن الولي للقاصر</td><td class="status-significant">مُعدَّل &mdash; السن من ١٨ هجرية إلى ١٥ ميلادية</td></tr>
+        <tr><td>161&ndash;175</td><td>151&ndash;160</td><td>الإذن، الولاية، الحجر</td><td class="status-retained">أُبقيت (بلغة عصرية)</td></tr>
+
+        <tr class="section-sub"><td colspan="4">عيوب الإرادة (١٧٦&ndash;١٩٨ &larr; ١٦١&ndash;١٧٩)</td></tr>
+        <tr><td>176&ndash;184</td><td>161&ndash;169</td><td>الإكراه (٩ مواد)</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>185&ndash;192</td><td>170&ndash;177</td><td>التدليس والغبن (٨ مواد)</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>193&ndash;198</td><td>178&ndash;179</td><td>الغلط</td><td class="status-modified">دُمجت &mdash; ٦ مواد إلى مادتين</td></tr>
+
+        <tr class="section-sub"><td colspan="4">المحل، الصحة، الخيارات، الأثر (١٩٩&ndash;٢٧٥ &larr; ١٨٠&ndash;٢٣٨)</td></tr>
+        <tr><td>199&ndash;208</td><td>180&ndash;185</td><td>محل العقد</td><td class="status-modified">دُمجت &mdash; ١٠ إلى ٦ مواد</td></tr>
+        <tr><td>209&ndash;212</td><td>186&ndash;193</td><td>صحة العقد</td><td class="status-modified">وُسّعت &mdash; ٤ إلى ٨ مواد</td></tr>
+        <tr><td>213&ndash;218</td><td>194</td><td>العقود غير اللازمة</td><td class="status-modified">دُمجت &mdash; ٦ مواد إلى مادة واحدة</td></tr>
+        <tr><td>219&ndash;242</td><td>195&ndash;218</td><td>الخيارات المؤثرة في العقد</td><td class="status-retained">أُعيد تنظيمها</td></tr>
+        <tr><td>243&ndash;275</td><td>219&ndash;238</td><td>آثار العقد</td><td class="status-significant">دُمجت + جديد: أحكام الظروف الاستثنائية</td></tr>
+
+        <tr class="section-sub"><td colspan="4">التصرف الانفرادي، المسؤولية المدنية، الفعل النافع، القانون</td></tr>
+        <tr><td>276&ndash;281</td><td>239&ndash;244</td><td>الإرادة المنفردة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>282&ndash;317</td><td>245&ndash;273</td><td>المسؤولية التقصيرية</td><td class="status-modified">مُعدَّل &mdash; يجوز الجمع بين الدية والتعويض الإضافي</td></tr>
+        <tr><td>318&ndash;336</td><td>274&ndash;290</td><td>الإثراء بلا سبب، الفضالة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>337</td><td>291</td><td>الالتزامات الناشئة عن القانون</td><td class="status-retained">أُبقيت</td></tr>
+
+        <tr class="section-sub"><td colspan="4">آثار الحق (٣٣٨&ndash;٤٨٨ &larr; ٢٩٢&ndash;٤٤٤)</td></tr>
+        <tr><td>338&ndash;370</td><td>292&ndash;315</td><td>التنفيذ العيني والتعويض</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>371&ndash;390</td><td>316&ndash;330</td><td>ضمانات الحقوق</td><td class="status-significant">مُعدَّل &mdash; حماية الكفيل: وجوب مطالبة المدين أولاً</td></tr>
+        <tr><td>391&ndash;433</td><td>331&ndash;368</td><td>الحوالة، الحلول، المقاصة، الشرط والأجل</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>434&ndash;467</td><td>369&ndash;424</td><td>آثار الحق بالنسبة للغير</td><td class="status-significant">وُسّعت بشكل كبير &mdash; ٣٤ إلى ٥٦ مادة</td></tr>
+        <tr><td>468&ndash;488</td><td>425&ndash;444</td><td>انقضاء الحق</td><td class="status-retained">أُبقيت</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK TWO -->
+<div class="article-section" id="book2">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الكتاب الثاني: العقود المسماة &mdash; المواد ٤٤٥&ndash;١٠٤٠ (كانت ٤٨٩&ndash;١١٣١)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>489&ndash;564</td><td>~445&ndash;510</td><td>البيع</td><td class="status-modified">مُعدَّل &mdash; مدة العيب الخفي من ٦ أشهر إلى سنة؛ حماية معززة في بيع العقارات</td></tr>
+        <tr><td>565&ndash;571</td><td>~511&ndash;516</td><td>المقايضة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>572&ndash;602</td><td>~517&ndash;545</td><td>المقاولة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>603&ndash;760</td><td>~546&ndash;690</td><td>الإيجار</td><td class="status-retained">أُبقيت (بتحديث)</td></tr>
+        <tr><td>761&ndash;787</td><td>~691&ndash;715</td><td>العارية</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>788&ndash;820</td><td>~716&ndash;745</td><td>الهبة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>821&ndash;889</td><td>~746&ndash;830</td><td>الشركة</td><td class="status-significant">مُعدَّل جوهرياً &mdash; شركة الشخص الواحد؛ الشركات المهنية؛ غير الربحية؛ تمييز مدني/تجاري؛ الانسحاب والتصفية</td></tr>
+        <tr><td>890&ndash;905</td><td>~831&ndash;845</td><td>القرض</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>906&ndash;936</td><td>~846&ndash;875</td><td>الصلح</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>937&ndash;947</td><td>~876&ndash;885</td><td>الإبراء</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>948&ndash;985</td><td>~886&ndash;920</td><td>الوكالة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>986&ndash;1011</td><td>~921&ndash;945</td><td>الوديعة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1012&ndash;1021</td><td>&mdash;</td><td>القمار والرهان</td><td class="status-removed">حُذفت &mdash; أُحيلت إلى الهيئة العامة لتنظيم الألعاب التجارية</td></tr>
+        <tr><td>1022&ndash;1074</td><td>~946&ndash;990</td><td>الكفالة</td><td class="status-significant">مُعدَّل &mdash; قاعدة مطالبة المدين أولاً؛ حماية أموال الكفيل</td></tr>
+        <tr><td>1075&ndash;1111</td><td>~991&ndash;1020</td><td>الحوالة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1112&ndash;1131</td><td>~1021&ndash;1040</td><td>الرهن</td><td class="status-retained">أُبقيت</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK THREE -->
+<div class="article-section" id="book3">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الكتاب الثالث: الحقوق العينية &mdash; المواد ١٠٤١&ndash;١٣٤٠ (كانت ١١٣٢&ndash;١٤٥٠)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>1132&ndash;1180</td><td>~1041&ndash;1085</td><td>حق الملكية</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1181&ndash;1220</td><td>~1086&ndash;1120</td><td>الحيازة</td><td class="status-modified">مُعدَّل &mdash; جديد: دعوى وقف الأعمال الجديدة</td></tr>
+        <tr><td>1221&ndash;1276</td><td>~1121&ndash;1170</td><td>الشفعة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1277&ndash;1302</td><td>~1171&ndash;1195</td><td>الالتصاق</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1303&ndash;1350</td><td>~1196&ndash;1240</td><td>الملكية الشائعة</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1351&ndash;1380</td><td>~1241&ndash;1270</td><td>حق الانتفاع</td><td class="status-modified">مُعدَّل &mdash; التسجيل إلزامي؛ عدم التسجيل = البطلان</td></tr>
+        <tr><td>1381&ndash;1395</td><td>~1271&ndash;1285</td><td>حق الاستعمال والسكنى</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1396&ndash;1410</td><td>~1286&ndash;1300</td><td>المساطحة</td><td class="status-modified">مُعدَّل &mdash; التسجيل إلزامي؛ عدم التسجيل = البطلان</td></tr>
+        <tr><td>1411&ndash;1440</td><td>~1301&ndash;1330</td><td>حقوق الارتفاق</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1441&ndash;1450</td><td>~1331&ndash;1340</td><td>الوقف</td><td class="status-modified">مُعدَّل &mdash; أموال الأجانب بدون ورثة تُخصص كوقف خيري</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK FOUR -->
+<div class="article-section" id="book4">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>الكتاب الرابع: التأمينات العينية &mdash; المواد ١٣٤١&ndash;١٤٢٢ (كانت ١٤٥١&ndash;١٥٢٨)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>١٩٨٥</th><th>٢٠٢٥</th><th>الموضوع</th><th>الحالة</th></tr></thead>
+      <tbody>
+        <tr><td>1451&ndash;1475</td><td>~1341&ndash;1365</td><td>الرهن التأميني</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1476&ndash;1503</td><td>~1366&ndash;1395</td><td>الرهن الحيازي</td><td class="status-retained">أُبقيت</td></tr>
+        <tr><td>1504&ndash;1528</td><td>~1396&ndash;1422</td><td>حقوق الامتياز</td><td class="status-retained">أُبقيت</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- REMOVED -->
+<div class="section-divider" id="removed">المواد المحذوفة</div>
+<div class="callout">
+  <span class="callout-label">القمار والرهان &mdash; المواد ١٠١٢&ndash;١٠٢١</span>
+  <p>حُذف القسم بأكمله المتعلق بالقمار والرهان (١٠ مواد) والذي كان يتناول البطلان والاسترداد واسترجاع الخسائر والمسابقات واليانصيب والمراهنات الرياضية. أُحيل تنظيم القمار إلى الإطار التنظيمي المتخصص للهيئة العامة لتنظيم الألعاب التجارية. كما نُقلت أحكام الإثبات الإضافية إلى قانون الإثبات المستقل (المرسوم بقانون اتحادي رقم ٣٥ لسنة ٢٠٢٢).</p>
+</div>
+<div class="removed-grid">
+  <div class="removed-cell">مادة ١٠١٢</div>
+  <div class="removed-cell">مادة ١٠١٣</div>
+  <div class="removed-cell">مادة ١٠١٤</div>
+  <div class="removed-cell">مادة ١٠١٥</div>
+  <div class="removed-cell">مادة ١٠١٦</div>
+  <div class="removed-cell">مادة ١٠١٧</div>
+  <div class="removed-cell">مادة ١٠١٨</div>
+  <div class="removed-cell">مادة ١٠١٩</div>
+  <div class="removed-cell">مادة ١٠٢٠</div>
+  <div class="removed-cell">مادة ١٠٢١</div>
+</div>
+
+<!-- NEW ARTICLES -->
+<div class="section-divider" id="new">المواد والأحكام المضافة</div>
+<div class="changes-grid">
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">المواد ١٢١&ndash;١٢٢: الالتزامات ما قبل التعاقد</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">واجب حسن النية الإلزامي في المفاوضات. حجب المعلومات الجوهرية عمداً = سوء نية. بطلان الشروط المقيّدة للإفصاح. مسؤولية الطرف سيئ النية عن الأضرار الفعلية (باستثناء الكسب الفائت ما لم يُتفق على خلاف ذلك).</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">المادة ١٣٨: العقود الإطارية</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">يجوز للأطراف تحديد الشروط الأساسية التي تحكم العقود اللاحقة مسبقاً. ما لم يُتفق على خلاف ذلك، تُشكّل العقود الإطارية جزءاً من العقود النهائية. ضرورية للعلاقات التجارية المتكررة وطويلة الأمد.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">نظرية الظروف الاستثنائية</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">تمكين المحاكم من إعادة التوازن العقدي عند وقوع ظروف غير متوقعة تُحدث اختلالاً. الخيارات: تمديد فترة التنفيذ، تعديل المقابل، أو الفسخ. استجابة لجائحة كورونا والتضخم.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">شركة الشخص الواحد</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">يُجيز صراحة تأسيس وتملك شركة مدنية من قبل شخص واحد، مؤكداً ما كان مسموحاً به فعلاً للشركات التجارية.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">الشركات المهنية</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">إطار شامل للمهنيين المرخصين. يسمح بالشراكة مع شركات أجنبية وشركاء من غير الممارسين. يحظر على الأفراد الشراكة في أكثر من شركة مهنية واحدة.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">دعوى وقف الأعمال الجديدة</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">دعوى جديدة تمكّن حائز العقار من وقف أعمال البناء التي تهدد حقوقه العقارية.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">إطار الشركات غير الربحية</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">أحكام جديدة للشركات المدنية غير الربحية، لم تكن معالجة سابقاً في القانون المدني.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">جديد</span>
+    <div class="change-title">حل الشركة عند انسحاب الشريك</div>
+    <div class="change-old" style="font-size:13px;color:var(--black)">انحلال تلقائي عند انسحاب الشريك. للشركاء الباقين الاستمرار بالاتفاق. تنتهي صلاحية المدير فوراً عند الحل؛ مسؤولية شخصية عن التصرفات بعد الحل.</div>
+  </div>
+</div>
+
+<!-- STRUCTURE -->
+<div class="section-divider" id="structure">مقارنة الهيكل التشريعي</div>
+<div class="structure-compare">
+  <div class="structure-col">
+    <h3>١٩٨٥ &mdash; القانون الاتحادي رقم ٥</h3>
+    <pre>
+القسم التمهيدي (المواد ١&ndash;١٢٣)
+  ف١: تطبيق القانون (١&ndash;٢٨)
+  ف٢: القواعد الفقهية (٢٩&ndash;٧٠)
+  ف٣: الأشخاص (٧١&ndash;٩٤)
+  ف٤: الأشياء والأموال (٩٥&ndash;١٠٣)
+  ف٥: الحقوق + الإثبات (١٠٤&ndash;١٢٣)
+
+الكتاب الأول (المواد ١٢٤&ndash;٤٨٨)
+  العقود (١٢٥&ndash;٢٧٥)
+  الإرادة المنفردة (٢٧٦&ndash;٢٨١)
+  المسؤولية التقصيرية (٢٨٢&ndash;٣١٧)
+  الفعل النافع (٣١٨&ndash;٣٣٦)
+  القانون (٣٣٧)
+  آثار الحق (٣٣٨&ndash;٤٨٨)
+
+الكتاب الثاني (المواد ٤٨٩&ndash;١١٣١)
+  البيع | المقايضة | المقاولة
+  الإيجار | العارية | الهبة
+  الشركة | القرض | الصلح
+  الإبراء | الوكالة | الوديعة
+  القمار والرهان (١٠١٢&ndash;١٠٢١)
+  الكفالة | الحوالة | الرهن
+
+الكتاب الثالث (المواد ١١٣٢&ndash;١٤٥٠)
+  الملكية | الحيازة | الشفعة
+  الالتصاق | الشيوع | الانتفاع
+  الاستعمال | المساطحة
+  الارتفاق | الوقف
+
+الكتاب الرابع (المواد ١٤٥١&ndash;١٥٢٨)
+  الرهن التأميني | الرهن الحيازي
+  حقوق الامتياز
+    </pre>
+  </div>
+  <div class="structure-col">
+    <h3>٢٠٢٥ &mdash; المرسوم بقانون رقم ٢٥</h3>
+    <pre>
+القسم التمهيدي (المواد ١&ndash;١١١)
+  ف١: تطبيق القانون (١&ndash;٢٨)
+  ف٢: القواعد الفقهية (٢٩&ndash;٧٠)
+  ف٣: الأشخاص (٧١&ndash;٩٤)
+  ف٤: الأشياء والأموال (٩٥&ndash;١٠٣)
+  ف٥: الحقوق (١٠٤&ndash;١١١)
+  [الإثبات &larr; قانون مستقل]
+
+الكتاب الأول (المواد ١١٢&ndash;٤٤٤)
+  العقود (١١٣&ndash;٢٣٨)
+    + التزامات ما قبل التعاقد
+    + العقود الإطارية
+    + الظروف الاستثنائية
+  الإرادة المنفردة (٢٣٩&ndash;٢٤٤)
+  المسؤولية التقصيرية (٢٤٥&ndash;٢٧٣)
+    + الجمع بين الدية والتعويض
+  الفعل النافع (٢٧٤&ndash;٢٩٠)
+  القانون (٢٩١)
+  آثار الحق (٢٩٢&ndash;٤٤٤)
+    + حماية الكفيل مُعزّزة
+    + آثار الحق تجاه الغير مُوسّعة
+
+الكتاب الثاني (المواد ٤٤٥&ndash;١٠٤٠)
+  البيع (العيب: ٦ أشهر&larr;سنة)
+  المقايضة | المقاولة | الإيجار
+  العارية | الهبة
+  الشركة (شخص واحد، مهنية،
+    غير ربحية، مدنية/تجارية)
+  القرض | الصلح | الإبراء
+  الوكالة | الوديعة
+  [القمار حُذف]
+  الكفالة (المدين أولاً)
+  الحوالة | الرهن
+
+الكتاب الثالث (المواد ١٠٤١&ndash;١٣٤٠)
+  الملكية (+وقف الأعمال الجديدة)
+  الحيازة | الشفعة | الالتصاق
+  الشيوع | الانتفاع (تسجيل إلزامي)
+  الاستعمال | المساطحة (تسجيل إلزامي)
+  الارتفاق | الوقف (أموال الأجانب)
+
+الكتاب الرابع (المواد ١٣٤١&ndash;١٤٢٢)
+  الرهن التأميني | الرهن الحيازي
+  حقوق الامتياز
+    </pre>
+  </div>
+</div>
+
+<!-- CLASSIFICATION -->
+<div class="section-divider" id="classification">تصنيف التغييرات</div>
+<div class="summary-bar">
+  <div class="summary-cell">
+    <div class="summary-pct">~٧٨٪</div>
+    <div class="summary-desc">أُبقيت دون تغيير</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~٨٪</div>
+    <div class="summary-desc">تعديلات طفيفة</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~٣٪</div>
+    <div class="summary-desc">تعديلات جوهرية</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~٥٪</div>
+    <div class="summary-desc">دُمجت</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~١٪</div>
+    <div class="summary-desc">حُذفت</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~٣٪</div>
+    <div class="summary-desc">أحكام جديدة</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~٢٪</div>
+    <div class="summary-desc">أُعيد تنظيمها</div>
+  </div>
+</div>
+
+<!-- CALLOUT -->
+<div class="callout">
+  <span class="callout-label">ملاحظات هامة</span>
+  <p style="margin-bottom:10px"><strong>تاريخ النفاذ:</strong> يسري القانون الجديد اعتباراً من <strong>١ يونيو ٢٠٢٦</strong>. يظل قانون ١٩٨٥ سارياً حتى ذلك الحين.</p>
+  <p style="margin-bottom:10px"><strong>أرقام المواد التقريبية:</strong> أرقام المواد الدقيقة في قانون ٢٠٢٥ للكتب الثاني إلى الرابع مبنية على جدول المقارنة من ليكسس الشرق الأوسط وتحليلات مكاتب المحاماة المتعددة. يُرجع إلى النص الرسمي الكامل للمراجع الدقيقة.</p>
+  <p style="margin-bottom:10px"><strong>أحكام الإثبات:</strong> نُقلت كثير من مواد الإثبات من قانون ١٩٨٥ (المواد ١١٢&ndash;١٢٣) إلى المرسوم بقانون اتحادي رقم ٣٥ لسنة ٢٠٢٢ (قانون الإثبات في المعاملات المدنية والتجارية).</p>
+  <p><strong>الإحالة إلى القوانين المتخصصة:</strong> يستبعد قانون ٢٠٢٥ عمداً المسائل التي تحكمها قوانين متخصصة (قانون الشركات، قانون الإفلاس، تنظيم الألعاب) لتجنب الازدواجية.</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-right">
+    تستند هذه المقارنة إلى نص القانون الاتحادي رقم ٥ لسنة ١٩٨٥ (ملف PDF) والتحليلات المتاحة للعموم للمرسوم بقانون اتحادي رقم ٢٥ لسنة ٢٠٢٥. أرقام المواد للكتب الثاني إلى الرابع تقريبية. يُرجع إلى الجريدة الرسمية للنص المعتمد.
+    <br><br>
+    أُعدّ في أبريل ٢٠٢٦
+  </div>
+  <div class="footer-left">
+    <strong style="font-size:10px;letter-spacing:2px;">المصادر</strong><br><br>
+    <a href="https://www.squirepattonboggs.com/insights/publications/client-update-on-the-new-civil-law-in-the-uae-federal-decree-law-no25-of-2025/">سكواير باتون بوغز</a>
+    <a href="https://www.lexismiddleeast.com/pn/UnitedArabEmirates/UAE_Civil_Transactions_Comparison_of_Articles_1985_2025/en">ليكسس الشرق الأوسط &mdash; مقارنة المواد</a>
+    <a href="https://www.mondaq.com/trials-appeals-compensation/1731016/uae-enacts-a-new-civil-transactions-law-federal-decree-law-no-25-of-2025-key-highlights">موندَك / بي إس إيه للمحاماة</a>
+    <a href="https://www.alketbilaw.com/uae-civil-transactions-law-federal-decree-law-no-25-of-2025-a-new-era-in-civil-law/">الكتبي للمحاماة</a>
+    <a href="https://www.gtlaw.com/en/insights/2026/01/uae-civil-code-gambling-provisions-removed">غرينبرغ تراوريغ</a>
+    <a href="https://conflictoflaws.net/2026/the-conflict-of-law-rules-in-the-uaes-new-civil-transactions-act-yet-another-missed-opportunity/">تنازع القوانين</a>
+    <a href="https://www.clydeco.com/en/insights/2026/01/change-in-the-uae-s-age-of-legal-capacity">كلايد آند كو</a>
+  </div>
+</div>
+
+<script>
+function toggleSection(header) {
+  header.classList.toggle('open');
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
