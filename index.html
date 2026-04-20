@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UAE Civil Transactions Law - 1985 vs 2025 Comparison</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --black: #0a0a0a;
+    --white: #f5f5f0;
+    --gray: #888;
+    --light-gray: #e0e0d8;
+    --border: 3px solid var(--black);
+    --border-thin: 1.5px solid var(--black);
+  }
+
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* MASTHEAD */
+  .masthead {
+    border-bottom: 6px solid var(--black);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .masthead-vol {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .masthead-date {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+  }
+
+  /* HERO */
+  .hero {
+    border-bottom: 6px solid var(--black);
+    padding: 60px 40px 50px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 6vw, 80px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .hero .subtitle {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(12px, 1.5vw, 16px);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 30px;
+  }
+  .hero .hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .hero .hero-meta span {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border: 2px solid var(--black);
+  }
+
+  /* LAYOUT */
+  .container { max-width: 1100px; margin: 0 auto; }
+
+  /* SECTION DIVIDER */
+  .section-divider {
+    border-bottom: var(--border);
+    padding: 12px 40px;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  /* AT A GLANCE */
+  .at-a-glance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    border-bottom: var(--border);
+  }
+  .glance-card {
+    padding: 30px 30px;
+    border-right: var(--border);
+    border-bottom: var(--border-thin);
+  }
+  .glance-card:last-child { border-right: none; }
+  .glance-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 6px;
+  }
+  .glance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+  .glance-old {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+  .glance-arrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+  }
+  .glance-new {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  /* STATS BAR */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border-bottom: var(--border);
+  }
+  .stat-cell {
+    text-align: center;
+    padding: 25px 15px;
+    border-right: var(--border-thin);
+  }
+  .stat-cell:last-child { border-right: none; }
+  .stat-number {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+
+  /* KEY CHANGES GRID */
+  .changes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: var(--border);
+  }
+  @media (max-width: 700px) {
+    .changes-grid { grid-template-columns: 1fr; }
+  }
+  .change-item {
+    padding: 24px 30px;
+    border-right: var(--border-thin);
+    border-bottom: var(--border-thin);
+  }
+  .change-item:nth-child(2n) { border-right: none; }
+  .change-number {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    display: inline-block;
+    padding: 2px 8px;
+    margin-bottom: 8px;
+  }
+  .change-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .change-comparison {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+  .change-old, .change-new {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  .change-old {
+    color: var(--gray);
+    padding-right: 5px;
+  }
+  .change-sep {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 16px;
+    padding-top: 0;
+  }
+  .change-new { font-weight: 600; }
+
+  .tag-modified {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1.5px solid var(--black);
+    padding: 1px 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 6px;
+  }
+  .tag-new {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+    padding: 2px 8px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 6px;
+  }
+  .tag-removed {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1.5px solid var(--black);
+    padding: 1px 6px;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-left: 6px;
+    text-decoration: line-through;
+  }
+
+  /* ARTICLE TABLE SECTIONS */
+  .article-section {
+    border-bottom: var(--border);
+  }
+  .article-section-header {
+    padding: 18px 30px;
+    background: var(--black);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  .article-section-header .toggle {
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  .article-section-header.open .toggle {
+    transform: rotate(45deg);
+  }
+  .article-section-body {
+    display: none;
+  }
+  .article-section-body.open {
+    display: block;
+  }
+
+  .article-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .article-table thead th {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 10px 14px;
+    border-bottom: 2px solid var(--black);
+    background: var(--light-gray);
+    position: sticky;
+    top: 0;
+  }
+  .article-table tbody tr {
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .article-table tbody tr:hover {
+    background: rgba(0,0,0,0.03);
+  }
+  .article-table td {
+    padding: 8px 14px;
+    font-size: 13px;
+    vertical-align: top;
+  }
+  .article-table td:first-child,
+  .article-table td:nth-child(2) {
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    width: 80px;
+  }
+  .article-table td:nth-child(3) {
+    font-weight: 500;
+  }
+  .status-retained { color: var(--gray); }
+  .status-modified { font-weight: 600; }
+  .status-significant { font-weight: 700; }
+  .status-new {
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+    padding: 1px 5px;
+    font-size: 11px;
+  }
+  .status-removed {
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+
+  /* REMOVED SECTION */
+  .removed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 0;
+    border-bottom: var(--border);
+  }
+  .removed-cell {
+    text-align: center;
+    padding: 16px 8px;
+    border-right: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+    color: var(--gray);
+  }
+
+  /* STRUCTURE COMPARISON */
+  .structure-compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: var(--border);
+  }
+  @media (max-width: 700px) {
+    .structure-compare { grid-template-columns: 1fr; }
+  }
+  .structure-col {
+    padding: 30px;
+    border-right: var(--border-thin);
+  }
+  .structure-col:last-child { border-right: none; }
+  .structure-col h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--black);
+  }
+  .structure-col pre {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  /* SUMMARY BAR */
+  .summary-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    border-bottom: var(--border);
+  }
+  .summary-cell {
+    text-align: center;
+    padding: 20px 10px;
+    border-right: var(--border-thin);
+  }
+  .summary-cell:last-child { border-right: none; }
+  .summary-pct {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .summary-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 4px;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 30px 40px;
+    border-top: 6px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footer-left {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    max-width: 500px;
+    line-height: 1.8;
+  }
+  .footer-right {
+    text-align: right;
+  }
+  .footer-right a {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: var(--black);
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid transparent;
+  }
+  .footer-right a:hover {
+    border-bottom: 1px solid var(--black);
+  }
+
+  /* PULL QUOTE */
+  .pull-quote {
+    padding: 40px;
+    border-bottom: var(--border);
+    text-align: center;
+  }
+  .pull-quote blockquote {
+    font-size: clamp(18px, 2.5vw, 28px);
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 700px;
+    margin: 0 auto 12px;
+  }
+  .pull-quote cite {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gray);
+    font-style: normal;
+  }
+
+  /* CALLOUT BOX */
+  .callout {
+    border: 3px solid var(--black);
+    margin: 0;
+    padding: 24px 30px;
+    border-bottom: var(--border);
+  }
+  .callout-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: var(--black);
+    color: var(--white);
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 12px;
+  }
+  .callout p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* NAV TOC */
+  .toc {
+    padding: 24px 30px;
+    border-bottom: var(--border);
+    columns: 2;
+    column-gap: 40px;
+  }
+  @media (max-width: 700px) {
+    .toc { columns: 1; }
+  }
+  .toc a {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--black);
+    text-decoration: none;
+    padding: 5px 0;
+    border-bottom: 1px dotted var(--light-gray);
+    break-inside: avoid;
+  }
+  .toc a:hover { background: var(--light-gray); }
+  .toc a span {
+    color: var(--gray);
+    float: right;
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-vol">Vol. I &mdash; Legal Comparison</div>
+  <div class="masthead-date">April 2026 &bull; Abu Dhabi</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="subtitle">UAE Civil Transactions Law</div>
+  <h1>1985 vs 2025<br>What Changed</h1>
+  <div class="subtitle" style="margin-bottom:20px;">Federal Law No. 5 of 1985 &rarr; Federal Decree-Law No. 25 of 2025</div>
+  <div class="hero-meta">
+    <span>1,528 &rarr; 1,422 Articles</span>
+    <span>Effective 1 June 2026</span>
+    <span>Wholesale Replacement</span>
+  </div>
+</div>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-cell">
+    <div class="stat-number">1,528</div>
+    <div class="stat-label">Old Articles</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">1,422</div>
+    <div class="stat-label">New Articles</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">-106</div>
+    <div class="stat-label">Net Reduction</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">~78%</div>
+    <div class="stat-label">Retained</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">15+</div>
+    <div class="stat-label">Major Changes</div>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-number">10</div>
+    <div class="stat-label">Removed</div>
+  </div>
+</div>
+
+<!-- PULL QUOTE -->
+<div class="pull-quote">
+  <blockquote>&ldquo;The most significant legislative overhaul in the United Arab Emirates since the founding of the Federation.&rdquo;</blockquote>
+  <cite>Multiple legal analyses, January 2026</cite>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="section-divider">In This Issue</div>
+<div class="toc">
+  <a href="#key-changes">15 Key Changes at a Glance <span>&darr;</span></a>
+  <a href="#at-a-glance">Side-by-Side Overview <span>&darr;</span></a>
+  <a href="#general-provisions">Introductory Section: General Provisions <span>Arts 1&ndash;111</span></a>
+  <a href="#ch1-application">Ch 1: Application of Law <span>Arts 1&ndash;28</span></a>
+  <a href="#ch2-maxims">Ch 2: Jurisprudential Maxims <span>Arts 29&ndash;70</span></a>
+  <a href="#ch3-persons">Ch 3: Persons <span>Arts 71&ndash;94</span></a>
+  <a href="#ch4-property">Ch 4: Things &amp; Property <span>Arts 95&ndash;103</span></a>
+  <a href="#ch5-rights">Ch 5: Rights <span>Arts 104&ndash;111</span></a>
+  <a href="#book1">Book One: Personal Obligations <span>Arts 112&ndash;444</span></a>
+  <a href="#book2">Book Two: Nominate Contracts <span>Arts 445&ndash;1040</span></a>
+  <a href="#book3">Book Three: Property Rights <span>Arts 1041&ndash;1340</span></a>
+  <a href="#book4">Book Four: Real Securities <span>Arts 1341&ndash;1422</span></a>
+  <a href="#removed">Articles Removed <span>10 articles</span></a>
+  <a href="#new">New Articles Added <span>9+ provisions</span></a>
+  <a href="#structure">Structural Comparison <span>&darr;</span></a>
+  <a href="#classification">Change Classification <span>&darr;</span></a>
+</div>
+
+<!-- AT A GLANCE -->
+<div class="section-divider" id="at-a-glance">Side-by-Side Overview</div>
+<div class="at-a-glance">
+  <div class="glance-card">
+    <div class="glance-label">Citation</div>
+    <div class="glance-row">
+      <span class="glance-old">Federal Law No. 5/1985</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">Decree-Law No. 25/2025</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">Issued By</div>
+    <div class="glance-row">
+      <span class="glance-old">Zayed bin Sultan</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">Mohamed bin Zayed</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">Date Issued</div>
+    <div class="glance-row">
+      <span class="glance-old">15 Dec 1985</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">1 Oct 2025</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">Total Articles</div>
+    <div class="glance-row">
+      <span class="glance-old">1,528</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">1,422</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">Nature</div>
+    <div class="glance-row">
+      <span class="glance-old">Incremental</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">Complete Re-codification</span>
+    </div>
+  </div>
+  <div class="glance-card">
+    <div class="glance-label">Effective Date</div>
+    <div class="glance-row">
+      <span class="glance-old">March 1986</span>
+      <span class="glance-arrow">&rarr;</span>
+      <span class="glance-new">1 June 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- 15 KEY CHANGES -->
+<div class="section-divider" id="key-changes">15 Key Changes</div>
+<div class="changes-grid">
+
+  <div class="change-item">
+    <span class="change-number">01</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Legislative Philosophy</div>
+    <div class="change-comparison">
+      <div class="change-old">Fixed hierarchy referencing specific Sunni jurisprudential schools (Imam Malik, Ahmad bin Hanbal, al-Shafi'i, Abu Hanifa)</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Broader judicial discretion; no single theological school; adds "principles of natural law and justice" as final fallback</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">02</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Age of Majority</div>
+    <div class="change-comparison">
+      <div class="change-old">21 lunar (Hijri) years</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">18 Gregorian years</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">03</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Minor's Financial Authorization</div>
+    <div class="change-comparison">
+      <div class="change-old">18 Hijri years for judicial authorization</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">15 years for judicial authorization to manage assets</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">04</span><span class="tag-new">New</span>
+    <div class="change-title">Good Faith & Pre-Contractual Duties</div>
+    <div class="change-comparison">
+      <div class="change-old">No formal framework existed</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Codified duty of good faith in negotiations; mandatory disclosure; bad faith liability for actual damages (Arts 121-122)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">05</span><span class="tag-new">New</span>
+    <div class="change-title">Framework Agreements</div>
+    <div class="change-comparison">
+      <div class="change-old">Not recognized</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Formally codified; parties may predefine essential terms for subsequent contracts (Art 138)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">06</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Party Autonomy &mdash; Governing Law</div>
+    <div class="change-comparison">
+      <div class="change-old">Less explicit; used locus contractus as connecting factor</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Expressly prioritizes parties' choice of governing law (Art 19)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">07</span><span class="tag-removed">Removed</span>
+    <div class="change-title">Gambling / Betting</div>
+    <div class="change-comparison">
+      <div class="change-old">Articles 1012&ndash;1021 addressed gambling disputes, invalidity, restitution</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Entirely removed; deferred to GCGRA specialized gaming regulatory framework</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">08</span><span class="tag-new">New</span>
+    <div class="change-title">Single-Person Companies</div>
+    <div class="change-comparison">
+      <div class="change-old">Not expressly permitted for civil companies</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Expressly permits establishment and ownership by a single person</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">09</span><span class="tag-new">New</span>
+    <div class="change-title">Exceptional Circumstances</div>
+    <div class="change-comparison">
+      <div class="change-old">Limited judicial discretion for hardship/force majeure</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Courts expressly empowered to restore contractual equilibrium (extend, adjust, or terminate)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">10</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Guarantor Protection</div>
+    <div class="change-comparison">
+      <div class="change-old">Creditor could pursue guarantor before principal debtor</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Must pursue principal debtor first; guarantor's assets protected until debtor's exhausted</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">11</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Latent Defect Discovery</div>
+    <div class="change-comparison">
+      <div class="change-old">6 months from receipt</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Extended to 1 year from receipt</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">12</span><span class="tag-new">New</span>
+    <div class="change-title">Musataha / Usufruct Registration</div>
+    <div class="change-comparison">
+      <div class="change-old">Not regulated</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Registration mandatory; failure renders right null and void</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">13</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Diya + Damages Combined</div>
+    <div class="change-comparison">
+      <div class="change-old">Blood money and additional damages treated separately</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Diya now combinable with additional damages where injury exceeds diya</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">14</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Conflict of Laws &mdash; Marriage</div>
+    <div class="change-comparison">
+      <div class="change-old">Governed by lex patriae (national law of each spouse)</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Changed to lex loci celebrationis (law of place of celebration)</div>
+    </div>
+  </div>
+
+  <div class="change-item">
+    <span class="change-number">15</span><span class="tag-modified">Modified</span>
+    <div class="change-title">Public Policy Exception (Art 27)</div>
+    <div class="change-comparison">
+      <div class="change-old">2020: Restricted scope excluding personal status</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Broader application restored; explicit Sharia reference in override removed</div>
+    </div>
+  </div>
+
+  <!-- pad empty cell for grid alignment -->
+  <div class="change-item" style="border-bottom:none;">
+    <span class="change-number">++</span><span class="tag-new">New</span>
+    <div class="change-title">Abuse of Rights (Art 106)</div>
+    <div class="change-comparison">
+      <div class="change-old">Basic doctrine existed</div>
+      <div class="change-sep">&rarr;</div>
+      <div class="change-new">Structured objective proportionality test framework</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- ARTICLE-BY-ARTICLE TABLES -->
+<!-- ============================================ -->
+
+<div class="section-divider" id="general-provisions">Article-by-Article Mapping</div>
+
+<!-- Ch1: Application of Law -->
+<div class="article-section" id="ch1-application">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Ch 1: Application of Law in Time & Place &mdash; Arts 1&ndash;28</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>1</td><td>Legislative provisions & application</td><td class="status-significant">MODIFIED &mdash; Broader judicial discretion; specific schools removed; hierarchy: statutory &rarr; Sharia &rarr; custom &rarr; natural law</td></tr>
+        <tr><td>2</td><td>2</td><td>Islamic jurisprudence in interpretation</td><td class="status-modified">MODIFIED &mdash; Broadened; no longer limited to specific schools</td></tr>
+        <tr><td>3</td><td>3</td><td>Public order definition</td><td class="status-modified">MODIFIED &mdash; Removed "definitive provisions of Islamic Shari'ah" requirement</td></tr>
+        <tr><td>4</td><td>4</td><td>Repeal of legislative provisions</td><td class="status-modified">MODIFIED &mdash; Added: specific provision prevails over general</td></tr>
+        <tr><td>5</td><td>5</td><td>Competence / legal capacity</td><td class="status-retained">Retained</td></tr>
+        <tr><td>6</td><td>6</td><td>Limitation of time provisions</td><td class="status-retained">Retained</td></tr>
+        <tr><td>7</td><td>7</td><td>Limitation period changes</td><td class="status-retained">Retained</td></tr>
+        <tr><td>8</td><td>8</td><td>Evidential proof</td><td class="status-retained">Retained</td></tr>
+        <tr><td>9</td><td>9</td><td>Calendar calculation</td><td class="status-retained">Retained</td></tr>
+        <tr><td>10</td><td>10</td><td>Conflict of laws &mdash; relationships</td><td class="status-retained">Retained</td></tr>
+        <tr><td>11</td><td>11</td><td>Nationality & civil status</td><td class="status-retained">Retained</td></tr>
+        <tr><td>12</td><td>12</td><td>Marriage requirements</td><td class="status-significant">MODIFIED &mdash; lex patriae &rarr; lex loci celebrationis</td></tr>
+        <tr><td>13</td><td>13</td><td>Marriage effects & divorce</td><td class="status-significant">MODIFIED &mdash; husband's nationality &rarr; lex loci celebrationis</td></tr>
+        <tr><td>14</td><td>14</td><td>UAE citizen marriage</td><td class="status-modified">MODIFIED &mdash; Expanded to include those who subsequently acquired citizenship</td></tr>
+        <tr><td>15</td><td>15</td><td>Obligations to support relatives</td><td class="status-retained">Retained</td></tr>
+        <tr><td>16</td><td>16</td><td>Guardianship & trusteeship</td><td class="status-retained">Retained</td></tr>
+        <tr><td>17</td><td>17</td><td>Inheritance & wills</td><td class="status-modified">MODIFIED &mdash; Permits professio juris (testator's choice of law)</td></tr>
+        <tr><td>18</td><td>18</td><td>Property rights & lex situs</td><td class="status-retained">Retained</td></tr>
+        <tr><td>19</td><td>19</td><td>Contractual obligations</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Party autonomy expressly codified</td></tr>
+        <tr><td>20</td><td>20</td><td>Non-contractual obligations</td><td class="status-retained">Retained</td></tr>
+        <tr><td>21</td><td>21</td><td>Jurisdiction & procedure</td><td class="status-retained">Retained</td></tr>
+        <tr><td>22</td><td>22</td><td>Contrary provisions in special laws</td><td class="status-retained">Retained</td></tr>
+        <tr><td>23</td><td>23</td><td>Private international law</td><td class="status-retained">Retained</td></tr>
+        <tr><td>24</td><td>24</td><td>Unknown / dual nationality</td><td class="status-retained">Retained</td></tr>
+        <tr><td>25</td><td>25</td><td>Multiple legal systems</td><td class="status-retained">Retained</td></tr>
+        <tr><td>26</td><td>26</td><td>Foreign law application</td><td class="status-retained">Retained</td></tr>
+        <tr><td>27</td><td>27</td><td>Public order override</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Broader application restored; Sharia reference removed</td></tr>
+        <tr><td>28</td><td>28</td><td>Impossible to prove foreign law</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch2: Jurisprudential Maxims -->
+<div class="article-section" id="ch2-maxims">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Ch 2: Jurisprudential Maxims & Rules of Interpretation &mdash; Arts 29&ndash;70</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>29</td><td>29</td><td>Ignorance of law no excuse</td><td class="status-retained">Retained</td></tr>
+        <tr><td>30</td><td>30</td><td>Exceptions not by analogy</td><td class="status-retained">Retained</td></tr>
+        <tr><td>31</td><td>31</td><td>Mandatory provisions prevail</td><td class="status-retained">Retained</td></tr>
+        <tr><td>32</td><td>32</td><td>Prerequisite obligations</td><td class="status-retained">Retained</td></tr>
+        <tr><td>33</td><td>33</td><td>Rule depends on cause</td><td class="status-retained">Retained</td></tr>
+        <tr><td>34</td><td>34</td><td>Fungibles not ceasing</td><td class="status-retained">Retained</td></tr>
+        <tr><td>35</td><td>35</td><td>Certainty not removed by doubt</td><td class="status-retained">Retained</td></tr>
+        <tr><td>36</td><td>36</td><td>Presumption of continuance</td><td class="status-retained">Retained</td></tr>
+        <tr><td>37</td><td>37</td><td>Presumption of discharge</td><td class="status-retained">Retained</td></tr>
+        <tr><td>38</td><td>38</td><td>Presumption against supervening</td><td class="status-retained">Retained</td></tr>
+        <tr><td>39</td><td>39</td><td>Past existence presumed</td><td class="status-retained">Retained</td></tr>
+        <tr><td>40</td><td>40</td><td>Recent occurrence presumed</td><td class="status-retained">Retained</td></tr>
+        <tr><td>41</td><td>41</td><td>No analogy from contrary</td><td class="status-retained">Retained</td></tr>
+        <tr><td>42</td><td>42</td><td>No harm principle</td><td class="status-retained">Retained</td></tr>
+        <tr><td>43</td><td>43</td><td>Necessity excuses</td><td class="status-retained">Retained</td></tr>
+        <tr><td>44</td><td>44</td><td>Bound by admissions / averting evil</td><td class="status-retained">Retained</td></tr>
+        <tr><td>45</td><td>45</td><td>Compelling need vs. others' rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>46</td><td>46</td><td>Custom binding</td><td class="status-retained">Retained</td></tr>
+        <tr><td>47</td><td>47</td><td>Customary usage as evidence</td><td class="status-retained">Retained</td></tr>
+        <tr><td>48</td><td>48</td><td>Custom & impossibility</td><td class="status-retained">Retained</td></tr>
+        <tr><td>49</td><td>49</td><td>Prevailing over exceptional</td><td class="status-retained">Retained</td></tr>
+        <tr><td>50</td><td>50</td><td>Custom as stipulated condition</td><td class="status-retained">Retained</td></tr>
+        <tr><td>51</td><td>51</td><td>Custom as express condition</td><td class="status-retained">Retained</td></tr>
+        <tr><td>52</td><td>52</td><td>Prohibition prevails over obligation</td><td class="status-retained">Retained</td></tr>
+        <tr><td>53</td><td>53</td><td>Ancillary matters</td><td class="status-retained">Retained</td></tr>
+        <tr><td>54</td><td>54</td><td>Incidental ceases with principal</td><td class="status-retained">Retained</td></tr>
+        <tr><td>55</td><td>55</td><td>Lapsed rights not revived</td><td class="status-retained">Retained</td></tr>
+        <tr><td>56</td><td>56</td><td>Subordinate annulled with principal</td><td class="status-retained">Retained</td></tr>
+        <tr><td>57</td><td>57</td><td>Substitute performance</td><td class="status-retained">Retained</td></tr>
+        <tr><td>58</td><td>58</td><td>Public dispositions & interest</td><td class="status-retained">Retained</td></tr>
+        <tr><td>59</td><td>59</td><td>Answer refers to question</td><td class="status-retained">Retained</td></tr>
+        <tr><td>60</td><td>60</td><td>No regard to mere possibilities</td><td class="status-retained">Retained</td></tr>
+        <tr><td>61</td><td>61</td><td>Wrong belief disregarded</td><td class="status-retained">Retained</td></tr>
+        <tr><td>62</td><td>62</td><td>Lawful proof as eye-witness</td><td class="status-retained">Retained</td></tr>
+        <tr><td>63</td><td>63</td><td>Bound by admissions</td><td class="status-retained">Retained</td></tr>
+        <tr><td>64</td><td>64</td><td>Subsidiary proved independently</td><td class="status-retained">Retained</td></tr>
+        <tr><td>65</td><td>65</td><td>Apparent matter as defence</td><td class="status-retained">Retained</td></tr>
+        <tr><td>66</td><td>66</td><td>Yield belongs to upkeep bearer</td><td class="status-retained">Retained</td></tr>
+        <tr><td>67</td><td>67</td><td>Advantage bears burden</td><td class="status-retained">Retained</td></tr>
+        <tr><td>68</td><td>68</td><td>No disposition over another's property</td><td class="status-retained">Retained</td></tr>
+        <tr><td>69</td><td>69</td><td>Premature obtainer penalized</td><td class="status-retained">Retained</td></tr>
+        <tr><td>70</td><td>70</td><td>No resiling from performance</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch3: Persons -->
+<div class="article-section" id="ch3-persons">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Ch 3: Persons &mdash; Arts 71&ndash;94</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>71</td><td>71</td><td>Personality from birth to death</td><td class="status-retained">Retained</td></tr>
+        <tr><td>72</td><td>72</td><td>Birth and death records</td><td class="status-retained">Retained</td></tr>
+        <tr><td>73</td><td>73</td><td>Foundlings</td><td class="status-retained">Retained</td></tr>
+        <tr><td>74</td><td>74</td><td>Lost and missing persons</td><td class="status-retained">Retained</td></tr>
+        <tr><td>75</td><td>75</td><td>Nationality</td><td class="status-retained">Retained</td></tr>
+        <tr><td>76</td><td>76</td><td>Family definition</td><td class="status-retained">Retained</td></tr>
+        <tr><td>77</td><td>77</td><td>Direct / indirect relationships</td><td class="status-retained">Retained</td></tr>
+        <tr><td>78</td><td>78</td><td>Degree of relationship</td><td class="status-retained">Retained</td></tr>
+        <tr><td>79</td><td>79</td><td>Spousal relations</td><td class="status-retained">Retained</td></tr>
+        <tr><td>80</td><td>80</td><td>Name and surname</td><td class="status-retained">Retained</td></tr>
+        <tr><td>81</td><td>81</td><td>Residence (mawtin)</td><td class="status-modified">MODIFIED &mdash; Expressly recognizes multiple domiciles; personal vs commercial</td></tr>
+        <tr><td>82</td><td>82</td><td>Business residence</td><td class="status-modified">MODIFIED &mdash; Enhanced provisions</td></tr>
+        <tr><td>83</td><td>83</td><td>Defective capacity residence</td><td class="status-retained">Retained</td></tr>
+        <tr><td>84</td><td>84</td><td>Elective residence</td><td class="status-retained">Retained</td></tr>
+        <tr><td>85</td><td>85</td><td>Age of majority & capacity</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; 21 lunar yrs &rarr; 18 Gregorian yrs</td></tr>
+        <tr><td>86</td><td>86</td><td>Discretion & civil rights</td><td class="status-modified">MODIFIED &mdash; Age of discretion updated</td></tr>
+        <tr><td>87</td><td>87</td><td>Defective capacity</td><td class="status-retained">Retained (modernized language)</td></tr>
+        <tr><td>88</td><td>88</td><td>Guardianship rules</td><td class="status-retained">Retained</td></tr>
+        <tr><td>89</td><td>89</td><td>Personal liberty</td><td class="status-retained">Retained</td></tr>
+        <tr><td>90</td><td>90</td><td>Unlawful infringement</td><td class="status-retained">Retained</td></tr>
+        <tr><td>91</td><td>91</td><td>Name disputes</td><td class="status-retained">Retained</td></tr>
+        <tr><td>92</td><td>92</td><td>Types of juridical persons</td><td class="status-modified">MODIFIED &mdash; Updated categories</td></tr>
+        <tr><td>93</td><td>93</td><td>Rights of juridical persons</td><td class="status-modified">MODIFIED &mdash; Clarified financial liability & litigation capacity</td></tr>
+        <tr><td>94</td><td>94</td><td>Subject to special laws</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Ch4 & Ch5 -->
+<div class="article-section" id="ch4-property">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Ch 4: Things & Property &mdash; Arts 95&ndash;103 | Ch 5: Rights &mdash; Arts 104&ndash;111</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>95</td><td>95</td><td>Property definition</td><td class="status-retained">Retained</td></tr>
+        <tr><td>96</td><td>96</td><td>Mutaqawwim / non-mutaqawwim</td><td class="status-modified">MODIFIED &mdash; Updated property concepts</td></tr>
+        <tr><td>97</td><td>97</td><td>Things as property subjects</td><td class="status-retained">Retained</td></tr>
+        <tr><td>98</td><td>98</td><td>Outside scope of dealing</td><td class="status-retained">Retained</td></tr>
+        <tr><td>99</td><td>99</td><td>Fungible / non-fungible</td><td class="status-retained">Retained</td></tr>
+        <tr><td>100</td><td>100</td><td>Consumable / usable</td><td class="status-retained">Retained</td></tr>
+        <tr><td>101</td><td>101</td><td>Real vs movable</td><td class="status-retained">Retained</td></tr>
+        <tr><td>102</td><td>102</td><td>Real property by allocation</td><td class="status-retained">Retained</td></tr>
+        <tr><td>103</td><td>103</td><td>Public property</td><td class="status-retained">Retained</td></tr>
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;text-transform:uppercase;font-size:11px;letter-spacing:2px">Chapter Five: Rights</td></tr>
+        <tr><td>104</td><td>104</td><td>Lawful exercise of rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>105</td><td>105</td><td>Private vs public harm</td><td class="status-retained">Retained</td></tr>
+        <tr><td>106</td><td>106</td><td>Abuse of rights</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Structured proportionality test framework</td></tr>
+        <tr><td>107</td><td>107</td><td>Types of rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>108</td><td>108</td><td>Personal rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>109</td><td>109</td><td>Property rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>110</td><td>110</td><td>Original / consequential</td><td class="status-retained">Retained</td></tr>
+        <tr><td>111</td><td>111</td><td>Moral rights</td><td class="status-retained">Retained</td></tr>
+        <tr><td>112&ndash;123</td><td>&mdash;</td><td>Evidence provisions</td><td class="status-modified">REORGANIZED &mdash; Moved to Evidence Law (Decree-Law 35/2022)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK ONE -->
+<div class="article-section" id="book1">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Book One: Personal Obligations & Rights &mdash; Arts 112&ndash;444 (was 124&ndash;488)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Contracts &mdash; General (124&ndash;128 &rarr; 112&ndash;118)</td></tr>
+        <tr><td>124</td><td>112</td><td>Sources of obligations</td><td class="status-retained">Retained</td></tr>
+        <tr><td>125</td><td>113</td><td>Contract definition</td><td class="status-retained">Retained</td></tr>
+        <tr><td>126</td><td>114</td><td>Subject matter of contract</td><td class="status-retained">Retained</td></tr>
+        <tr><td>127</td><td>115</td><td>Unlawful contract</td><td class="status-retained">Retained</td></tr>
+        <tr><td>128</td><td>116&ndash;118</td><td>Nominate/innominate + interpretation + good faith</td><td class="status-modified">MODIFIED &mdash; Expanded with good faith codification</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Making of the Contract (129&ndash;148 &rarr; 119&ndash;138)</td></tr>
+        <tr><td>129</td><td>119</td><td>Elements of contract making</td><td class="status-retained">Retained</td></tr>
+        <tr><td>130</td><td>120</td><td>Offer and acceptance</td><td class="status-retained">Retained</td></tr>
+        <tr><td>131</td><td>121</td><td>Expression of intent</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Pre-contractual good faith duties codified; bad faith = actual damages liability</td></tr>
+        <tr><td>132</td><td>122</td><td>Methods of expression</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Mandatory disclosure duty; void clauses limiting disclosure</td></tr>
+        <tr><td>133</td><td>123</td><td>Bare promise as contract</td><td class="status-retained">Retained</td></tr>
+        <tr><td>134</td><td>124</td><td>Offer of goods/services</td><td class="status-modified">MODIFIED &mdash; Displays with prices = binding offers</td></tr>
+        <tr><td>135&ndash;148</td><td>125&ndash;137</td><td>Silence, khiyar al-majlis, auctions, adhesion, promise to contract, earnest money</td><td class="status-retained">Substantially retained</td></tr>
+        <tr><td>&mdash;</td><td>138</td><td>Framework agreements</td><td><span class="status-new">NEW</span> &mdash; Parties may predefine essential terms for subsequent contracts</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Agency (149&ndash;156 &rarr; 139&ndash;146)</td></tr>
+        <tr><td>149&ndash;156</td><td>139&ndash;146</td><td>Agency in contracting (8 articles)</td><td class="status-retained">Retained</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Capacity (157&ndash;175 &rarr; 147&ndash;160)</td></tr>
+        <tr><td>157&ndash;158</td><td>147&ndash;148</td><td>General capacity; minor without discretion</td><td class="status-retained">Retained</td></tr>
+        <tr><td>159</td><td>149</td><td>Minor's financial dealings</td><td class="status-modified">MODIFIED &mdash; Now voidable in minor's interest (was suspended)</td></tr>
+        <tr><td>160</td><td>150</td><td>Guardian permitting minor</td><td class="status-significant">MODIFIED &mdash; Age lowered: 18 Hijri &rarr; 15 Gregorian years</td></tr>
+        <tr><td>161&ndash;175</td><td>151&ndash;160</td><td>Authorization, guardianship, restrictions</td><td class="status-retained">Retained (modernized language)</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Defects in Consent (176&ndash;198 &rarr; 161&ndash;179)</td></tr>
+        <tr><td>176&ndash;184</td><td>161&ndash;169</td><td>Duress (9 articles)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>185&ndash;192</td><td>170&ndash;177</td><td>Deception & cheating (8 articles)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>193&ndash;198</td><td>178&ndash;179</td><td>Mistake</td><td class="status-modified">CONSOLIDATED &mdash; 6 articles &rarr; 2 articles</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Subject Matter, Validity, Options, Effect (199&ndash;275 &rarr; 180&ndash;238)</td></tr>
+        <tr><td>199&ndash;208</td><td>180&ndash;185</td><td>Subject matter</td><td class="status-modified">CONSOLIDATED &mdash; 10 &rarr; 6 articles</td></tr>
+        <tr><td>209&ndash;212</td><td>186&ndash;193</td><td>Contract validity</td><td class="status-modified">EXPANDED &mdash; 4 &rarr; 8 articles</td></tr>
+        <tr><td>213&ndash;218</td><td>194</td><td>Non-binding contracts</td><td class="status-modified">CONSOLIDATED &mdash; 6 &rarr; 1 article</td></tr>
+        <tr><td>219&ndash;242</td><td>195&ndash;218</td><td>Options (khiyarat)</td><td class="status-retained">Reorganized (24 articles)</td></tr>
+        <tr><td>243&ndash;275</td><td>219&ndash;238</td><td>Effect of contracts</td><td class="status-significant">CONSOLIDATED + NEW exceptional circumstances provisions</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Unilateral Acts (276&ndash;281 &rarr; 239&ndash;244)</td></tr>
+        <tr><td>276&ndash;281</td><td>239&ndash;244</td><td>Unilateral acts (6 articles)</td><td class="status-retained">Retained</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Civil Liability / Torts (282&ndash;317 &rarr; 245&ndash;273)</td></tr>
+        <tr><td>282&ndash;317</td><td>245&ndash;273</td><td>Tortious liability (36 &rarr; 29 articles)</td><td class="status-modified">MODIFIED &mdash; Diya now combinable with additional damages</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Beneficial Act (318&ndash;336 &rarr; 274&ndash;290) | Law (337 &rarr; 291)</td></tr>
+        <tr><td>318&ndash;336</td><td>274&ndash;290</td><td>Unjust enrichment, voluntary agency</td><td class="status-retained">Retained (minor consolidation)</td></tr>
+        <tr><td>337</td><td>291</td><td>Obligations from law</td><td class="status-retained">Retained</td></tr>
+
+        <tr style="background:var(--light-gray)"><td colspan="4" style="font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase">Effects of a Right (338&ndash;488 &rarr; 292&ndash;444)</td></tr>
+        <tr><td>338&ndash;341</td><td>292&ndash;294</td><td>General effects</td><td class="status-modified">CONSOLIDATED</td></tr>
+        <tr><td>342&ndash;370</td><td>295&ndash;315</td><td>Specific performance & damages</td><td class="status-retained">Retained</td></tr>
+        <tr><td>371&ndash;390</td><td>316&ndash;330</td><td>Guarantees of rights</td><td class="status-significant">MODIFIED &mdash; Guarantor protection: debtor-first rule codified</td></tr>
+        <tr><td>391&ndash;419</td><td>331&ndash;353</td><td>Assignment, subrogation, set-off</td><td class="status-retained">Retained</td></tr>
+        <tr><td>420&ndash;433</td><td>354&ndash;368</td><td>Conditions & time clauses</td><td class="status-modified">EXPANDED &mdash; 14 &rarr; 15 articles</td></tr>
+        <tr><td>434&ndash;467</td><td>369&ndash;424</td><td>Third-party effects</td><td class="status-significant">SIGNIFICANTLY EXPANDED &mdash; 34 &rarr; 56 articles</td></tr>
+        <tr><td>468&ndash;488</td><td>425&ndash;444</td><td>Extinction of right</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK TWO -->
+<div class="article-section" id="book2">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Book Two: Nominate Contracts &mdash; Arts 445&ndash;1040 (was 489&ndash;1131)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>489&ndash;564</td><td>~445&ndash;510</td><td>Sale (Bai)</td><td class="status-modified">MODIFIED &mdash; Defect period 6mo &rarr; 1yr; enhanced real estate protections; sales by sample</td></tr>
+        <tr><td>565&ndash;571</td><td>~511&ndash;516</td><td>Exchange / Barter</td><td class="status-retained">Retained</td></tr>
+        <tr><td>572&ndash;602</td><td>~517&ndash;545</td><td>Muqawala (Contracting)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>603&ndash;760</td><td>~546&ndash;690</td><td>Lease (Ijara)</td><td class="status-retained">Retained (modernized)</td></tr>
+        <tr><td>761&ndash;787</td><td>~691&ndash;715</td><td>Loan for Use (Ariya)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>788&ndash;820</td><td>~716&ndash;745</td><td>Gift (Hiba)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>821&ndash;889</td><td>~746&ndash;830</td><td>Partnership (Sharika)</td><td class="status-significant">SIGNIFICANTLY MODIFIED &mdash; Single-person cos; professional cos; non-profit; civil/commercial distinction; withdrawal rules; manager liability</td></tr>
+        <tr><td>890&ndash;905</td><td>~831&ndash;845</td><td>Loan for Consumption</td><td class="status-retained">Retained</td></tr>
+        <tr><td>906&ndash;936</td><td>~846&ndash;875</td><td>Settlement (Sulh)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>937&ndash;947</td><td>~876&ndash;885</td><td>Release (Ibra)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>948&ndash;985</td><td>~886&ndash;920</td><td>Agency (Wakala)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>986&ndash;1011</td><td>~921&ndash;945</td><td>Deposit (Wadi'a)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1012&ndash;1021</td><td>&mdash;</td><td>Gambling & Betting</td><td class="status-removed">REMOVED &mdash; Deferred to GCGRA</td></tr>
+        <tr><td>1022&ndash;1074</td><td>~946&ndash;990</td><td>Guarantee (Kafala)</td><td class="status-significant">MODIFIED &mdash; Debtor-first rule; guarantor asset protection</td></tr>
+        <tr><td>1075&ndash;1111</td><td>~991&ndash;1020</td><td>Assignment (Hawala)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1112&ndash;1131</td><td>~1021&ndash;1040</td><td>Pledge</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK THREE -->
+<div class="article-section" id="book3">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Book Three: Property Rights (In Rem) &mdash; Arts 1041&ndash;1340 (was 1132&ndash;1450)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>1132&ndash;1180</td><td>~1041&ndash;1085</td><td>Ownership</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1181&ndash;1220</td><td>~1086&ndash;1120</td><td>Possession</td><td class="status-modified">MODIFIED &mdash; NEW action to stop new works</td></tr>
+        <tr><td>1221&ndash;1276</td><td>~1121&ndash;1170</td><td>Pre-emption (Shufa)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1277&ndash;1302</td><td>~1171&ndash;1195</td><td>Accession</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1303&ndash;1350</td><td>~1196&ndash;1240</td><td>Common Ownership</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1351&ndash;1380</td><td>~1241&ndash;1270</td><td>Usufruct</td><td class="status-modified">MODIFIED &mdash; Registration mandatory; non-registration = nullity</td></tr>
+        <tr><td>1381&ndash;1395</td><td>~1271&ndash;1285</td><td>Use & Habitation</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1396&ndash;1410</td><td>~1286&ndash;1300</td><td>Musataha</td><td class="status-modified">MODIFIED &mdash; Registration mandatory; failure = null and void</td></tr>
+        <tr><td>1411&ndash;1440</td><td>~1301&ndash;1330</td><td>Easements</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1441&ndash;1450</td><td>~1331&ndash;1340</td><td>Waqf</td><td class="status-modified">MODIFIED &mdash; Foreign national assets w/o heirs &rarr; waqf</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- BOOK FOUR -->
+<div class="article-section" id="book4">
+  <div class="article-section-header" onclick="toggleSection(this)">
+    <span>Book Four: Real Securities &mdash; Arts 1341&ndash;1422 (was 1451&ndash;1528)</span>
+    <span class="toggle">+</span>
+  </div>
+  <div class="article-section-body">
+    <table class="article-table">
+      <thead><tr><th>1985</th><th>2025</th><th>Topic</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>1451&ndash;1475</td><td>~1341&ndash;1365</td><td>Security Mortgage (Rahn Taameeni)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1476&ndash;1503</td><td>~1366&ndash;1395</td><td>Possessory Pledge (Rahn Hiyazi)</td><td class="status-retained">Retained</td></tr>
+        <tr><td>1504&ndash;1528</td><td>~1396&ndash;1422</td><td>Priority Rights / Liens</td><td class="status-retained">Retained</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- REMOVED ARTICLES -->
+<div class="section-divider" id="removed">Articles Removed</div>
+<div class="callout">
+  <span class="callout-label">Gambling & Betting &mdash; Arts 1012&ndash;1021</span>
+  <p>The entire section on gambling and betting (10 articles) covering invalidity, restitution, recoverability of losses, competitions, lotteries, and sports betting has been <strong>removed</strong>. Gambling regulation is now deferred to the General Commercial Gaming Regulatory Authority (GCGRA) specialized framework. Additional evidence provisions were moved to the separate Evidence Law (Federal Decree-Law No. 35 of 2022).</p>
+</div>
+<div class="removed-grid">
+  <div class="removed-cell">Art 1012</div>
+  <div class="removed-cell">Art 1013</div>
+  <div class="removed-cell">Art 1014</div>
+  <div class="removed-cell">Art 1015</div>
+  <div class="removed-cell">Art 1016</div>
+  <div class="removed-cell">Art 1017</div>
+  <div class="removed-cell">Art 1018</div>
+  <div class="removed-cell">Art 1019</div>
+  <div class="removed-cell">Art 1020</div>
+  <div class="removed-cell">Art 1021</div>
+</div>
+
+<!-- NEW ARTICLES -->
+<div class="section-divider" id="new">New Articles & Provisions</div>
+<div class="changes-grid">
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Art 121&ndash;122: Pre-Contractual Duties</div>
+    <div class="change-old" style="font-size:13px">Mandatory good faith in negotiations. Deliberate withholding of material information = bad faith. Void clauses limiting disclosure. Bad faith parties liable for actual damages (excluding lost profits unless agreed).</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Art 138: Framework Agreements</div>
+    <div class="change-old" style="font-size:13px">Parties may predefine essential terms governing subsequent contracts. Unless otherwise agreed, framework agreements form part of definitive contracts. Critical for recurring/long-term commercial relationships.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Exceptional Circumstances Doctrine</div>
+    <div class="change-old" style="font-size:13px">Courts empowered to restore contractual equilibrium when unforeseeable circumstances cause imbalance. Options: extend performance, adjust remuneration, or order termination. Response to COVID-19 and inflation.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Single-Person Companies</div>
+    <div class="change-old" style="font-size:13px">Expressly permits establishment and ownership of a civil company by a single individual, confirming what was already allowed for commercial entities.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Professional Companies</div>
+    <div class="change-old" style="font-size:13px">Comprehensive framework for licensed professionals. Allows foreign firm partnerships and non-practitioner partners. Prohibits individuals from partnering in multiple professional companies.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Action to Stop New Works</div>
+    <div class="change-old" style="font-size:13px">New claim enabling property possessors to suspend construction activities that threaten their property rights.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Non-Profit Company Framework</div>
+    <div class="change-old" style="font-size:13px">New provisions introduced for non-profit civil companies, previously unaddressed in the civil code.</div>
+  </div>
+  <div class="change-item">
+    <span class="change-number">NEW</span>
+    <div class="change-title">Company Dissolution on Withdrawal</div>
+    <div class="change-old" style="font-size:13px">Automatic dissolution upon partner withdrawal. Remaining partners may continue by mutual agreement. Manager authority terminates immediately upon dissolution; personal liability for post-dissolution acts.</div>
+  </div>
+</div>
+
+<!-- STRUCTURE COMPARISON -->
+<div class="section-divider" id="structure">Structural Comparison</div>
+<div class="structure-compare">
+  <div class="structure-col">
+    <h3>1985 &mdash; Federal Law No. 5</h3>
+    <pre>
+Introductory Section (Arts 1&ndash;123)
+  Ch 1: Application of law (1&ndash;28)
+  Ch 2: Jurisprudential maxims (29&ndash;70)
+  Ch 3: Persons (71&ndash;94)
+  Ch 4: Things & property (95&ndash;103)
+  Ch 5: Rights + Evidence (104&ndash;123)
+
+Book One (Arts 124&ndash;488)
+  Contracts (125&ndash;275)
+  Unilateral Acts (276&ndash;281)
+  Civil Liability (282&ndash;317)
+  Beneficial Act (318&ndash;336)
+  The Law (337)
+  Effects of a Right (338&ndash;488)
+
+Book Two (Arts 489&ndash;1131)
+  Sale | Exchange | Muqawala
+  Lease | Loan | Gift
+  Partnership | Loan for Consumption
+  Settlement | Release | Agency
+  Deposit | GAMBLING (1012&ndash;1021)
+  Guarantee | Assignment | Pledge
+
+Book Three (Arts 1132&ndash;1450)
+  Ownership | Possession
+  Pre-emption | Accession
+  Common Ownership | Usufruct
+  Use/Habitation | Musataha
+  Easements | Waqf
+
+Book Four (Arts 1451&ndash;1528)
+  Security Mortgage
+  Possessory Pledge
+  Priority Rights / Liens
+    </pre>
+  </div>
+  <div class="structure-col">
+    <h3>2025 &mdash; Decree-Law No. 25</h3>
+    <pre>
+Introductory Section (Arts 1&ndash;111)
+  Ch 1: Application of law (1&ndash;28)
+  Ch 2: Jurisprudential maxims (29&ndash;70)
+  Ch 3: Persons (71&ndash;94)
+  Ch 4: Things & property (95&ndash;103)
+  Ch 5: Rights (104&ndash;111)
+  [Evidence &rarr; separate law]
+
+Book One (Arts 112&ndash;444)
+  Contracts (113&ndash;238)
+    + Pre-contractual duties
+    + Framework agreements
+    + Exceptional circumstances
+  Unilateral Acts (239&ndash;244)
+  Civil Liability (245&ndash;273)
+    + Diya combinable w/ damages
+  Beneficial Act (274&ndash;290)
+  The Law (291)
+  Effects of a Right (292&ndash;444)
+    + Guarantor protection enhanced
+    + Third-party effects expanded
+
+Book Two (Arts 445&ndash;1040)
+  Sale (defect: 6mo&rarr;1yr) | Exchange
+  Muqawala | Lease | Loan | Gift
+  Partnership (single-person, professional,
+    non-profit, civil/commercial)
+  Loan | Settlement | Release
+  Agency | Deposit
+  [GAMBLING REMOVED]
+  Guarantee (debtor-first) | Assignment
+  Pledge
+
+Book Three (Arts 1041&ndash;1340)
+  Ownership (+stop new works)
+  Possession | Pre-emption
+  Accession | Common Ownership
+  Usufruct (registration req.)
+  Use/Habitation
+  Musataha (registration req.)
+  Easements | Waqf (expat assets)
+
+Book Four (Arts 1341&ndash;1422)
+  Security Mortgage
+  Possessory Pledge
+  Priority Rights / Liens
+    </pre>
+  </div>
+</div>
+
+<!-- CHANGE CLASSIFICATION -->
+<div class="section-divider" id="classification">Change Classification</div>
+<div class="summary-bar">
+  <div class="summary-cell">
+    <div class="summary-pct">~78%</div>
+    <div class="summary-desc">Retained Unchanged</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~8%</div>
+    <div class="summary-desc">Minor Modifications</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~3%</div>
+    <div class="summary-desc">Significantly Modified</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~5%</div>
+    <div class="summary-desc">Consolidated</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~1%</div>
+    <div class="summary-desc">Removed</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~3%</div>
+    <div class="summary-desc">New Provisions</div>
+  </div>
+  <div class="summary-cell">
+    <div class="summary-pct">~2%</div>
+    <div class="summary-desc">Reorganized</div>
+  </div>
+</div>
+
+<!-- CALLOUT -->
+<div class="callout">
+  <span class="callout-label">Important Notes</span>
+  <p style="margin-bottom:10px"><strong>Effective date:</strong> The new law takes effect on <strong>1 June 2026</strong>. Until then, the 1985 law remains in force.</p>
+  <p style="margin-bottom:10px"><strong>Approximate article numbers:</strong> The exact article numbers in the 2025 law for Books Two through Four are based on the Lexis Middle East comparison table and multiple law firm analyses. The full official English text should be consulted for precise references.</p>
+  <p style="margin-bottom:10px"><strong>Evidence provisions:</strong> Many evidence-related articles from the 1985 law (Arts 112&ndash;123) have been moved to the separate Federal Decree-Law No. 35 of 2022 (Law of Evidence in Civil and Commercial Transactions).</p>
+  <p><strong>Specialist law deference:</strong> The 2025 law deliberately excludes matters now governed by specialized laws (Companies Law, Bankruptcy Law, Gaming regulations) to reduce duplication.</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-left">
+    This comparison is based on the PDF text of Federal Law No. 5 of 1985 and publicly available analyses of Federal Decree-Law No. 25 of 2025. Article mappings for Books II&ndash;IV are approximate. Consult the official gazette for authoritative text.
+    <br><br>
+    Prepared April 2026
+  </div>
+  <div class="footer-right">
+    <strong style="font-size:10px;letter-spacing:2px;text-transform:uppercase;">Sources</strong><br><br>
+    <a href="https://www.squirepattonboggs.com/insights/publications/client-update-on-the-new-civil-law-in-the-uae-federal-decree-law-no25-of-2025/">Squire Patton Boggs</a>
+    <a href="https://www.lexismiddleeast.com/pn/UnitedArabEmirates/UAE_Civil_Transactions_Comparison_of_Articles_1985_2025/en">Lexis Middle East &mdash; Article Comparison</a>
+    <a href="https://www.mondaq.com/trials-appeals-compensation/1731016/uae-enacts-a-new-civil-transactions-law-federal-decree-law-no-25-of-2025-key-highlights">Mondaq / BSA Law</a>
+    <a href="https://www.alketbilaw.com/uae-civil-transactions-law-federal-decree-law-no-25-of-2025-a-new-era-in-civil-law/">Al Ketbi Law</a>
+    <a href="https://www.gtlaw.com/en/insights/2026/01/uae-civil-code-gambling-provisions-removed">Greenberg Traurig</a>
+    <a href="https://conflictoflaws.net/2026/the-conflict-of-law-rules-in-the-uaes-new-civil-transactions-act-yet-another-missed-opportunity/">Conflict of Laws .net</a>
+    <a href="https://www.clydeco.com/en/insights/2026/01/change-in-the-uae-s-age-of-legal-capacity">Clyde & Co</a>
+    <a href="https://www.lexis.ae/2026/01/08/uae-new-civil-transactions-law/">LexisNexis ME</a>
+  </div>
+</div>
+
+<script>
+function toggleSection(header) {
+  header.classList.toggle('open');
+  const body = header.nextElementSibling;
+  body.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
